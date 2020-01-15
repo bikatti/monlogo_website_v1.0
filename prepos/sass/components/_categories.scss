@@ -1,0 +1,40 @@
+.categories {
+    height: 640px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    background-attachment: scroll;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: initial;
+    background-size: auto;
+    // data scroll personalizado
+    .container-fluid {
+        padding: 0;
+    }
+    .row {
+        margin: 0;
+    }
+    &__title {
+        padding-left: 75px;
+        padding-bottom: 0;
+        &--text h1 {
+            width: 48%;
+        }
+        &--text h6 {
+            width: 70%;
+        }
+    }
+}
+[data-scrollable-inner] {
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+}
+[data-scrollable] {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+}

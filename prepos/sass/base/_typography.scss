@@ -1,0 +1,18 @@
+// paragraph
+p, h6 {
+    font-family: $font2;
+    font-size: $fontS1;
+    color: $color-primary;
+}
+
+// titles
+h1, h2, h3, h4 ,h5 {
+    font-family: $font1;
+    color: $color-variation;
+}
+h1 {
+    font-size: $fontS3;
+}
+h2 {
+    font-size: $fontS3 - 5;
+}

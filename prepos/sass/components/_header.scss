@@ -1,0 +1,34 @@
+.header {
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    nav {
+        padding-top: 15px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    img.iconos__menu {
+        width: 28px;
+    }
+    a.nav-link {
+        font-weight: 600;
+        &:hover {
+            color: $color-variation;
+        }
+        &:link {
+            color: $color-lightgrey;
+        }
+        &:visited {
+            color: $color-grey;
+        }
+        &:active {
+            text-decoration: underline wavy $color-variation;
+        }
+    }
+}
+.logo.logo__header {
+    img {
+        width: 150px;
+    }
+}
+

@@ -1,0 +1,24 @@
+.project {
+    height: 560px;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .project__title {
+        width: 60%;
+        padding-top: 20px;
+        h5 {
+            font-family: $font2;
+        }
+    }
+    .project__box {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .ok {
+        width: 100%;
+        height: 132px;
+        border: 2px solid $color-primary;
+        margin-bottom: 10px;
+    }
+}

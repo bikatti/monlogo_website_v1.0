@@ -1,0 +1,163 @@
+include lib/variables.pug
+include lib/mixins.pug
+<!DOCTYPE html>
+html(lang="en")
+ include base/head.pug
+  title Vivaverde
+ body
+  // menu
+  include base/header.pug
+
+  // hero
+  section.hero-index
+   .opacity--darken
+    .container
+     .hero__title
+      .hero__title--text
+       h1.text-left
+        | Lorem ipsum dolor
+        br
+        | sit amet consectetur adipi
+       h6 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias porro suscipit explicabo sapiente perspiciatis quae voluptatibus sequi facilis optio beatae debitis fuga omnis consectetur harum aliquid maxime, dolorem veritatis iure.
+       a(href="#")
+        button(type="button", class="btn btn-primary") contáctenos
+
+  // categories
+  section.categories
+   .container-fluid
+    .row.categories__title
+     .col-sm-9.col-12.categories__title--text
+      h1.text--left
+       | Categorías: Diseño, pagina web, y más!
+      .line__vertical-01
+      h6 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias porro suscipit explicabo sapiente perspiciatis quae voluptatibus sequi facilis optio beatae debitis fuga omnis consectetur harum aliquid maxime
+     .col-sm-2.col-12.d-flex.align-items-end.justify-content-center
+      a(href="#") ver más >
+    include components/carousel.pug
+
+  // Us
+  section.us
+   .container
+    .us__box
+     .row
+      .col-md-6.col-12.d-flex.justify-content-center
+       div.us__img
+      .col-md-6.col-12
+       .us__title
+        .us__title--text
+         h1.text--left
+          | Lorem ipsum dolor
+         .line__vertical-02
+         h6 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus molestias officiis maxime quas pariatur, distinctio commodi et corrupti quibusdam, fuga ratione illo in nesciunt, architecto dolorem quis assumenda earum explicabo.fuga ratione illo in nesciunt, architecto dolorem quis assumenda earum explicabo.
+         h6 Lorem ipsum dolor sit amet consectetur adipisicing elit quasi. Architecto aspernatur, ab qui officiis placeat porro enim ipsam iste numquam, eaque illo!
+         a(href="#")
+          button(type="button", class="btn btn-secondary") ver más
+
+  // faq
+  section.faq-index
+   .container
+    .faq-index__title
+     .faq-index__title--text
+      h1 Lorem ipsum sarel
+      .line__vertical-03
+    div(class="tab-pane fade show active", id="pills-home", role="tabpanel", aria-labelledby="pills-home-tab")
+     section.faq
+      .container
+       .row
+        .col-md-7.col-10.offset-1.offset-md-0.pb-3
+         h6.text-sm-left.text-center
+          | Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique quod placeat atque eveniet esse. Mollitia dolorum possimus eveniet.
+         ul(id="faq-list", class="wow faq-list fadeInUp", style="visibility: visible; animation-name: fadeInUp;")
+          li
+           a(data-toggle="collapse", class="collapsed aqui", href="#faq1")
+            | ¿Qué es una marca comercial?
+           .collapse#faq1
+            p
+             |La marca comercial es el signo con que 
+             |se identifica a un producto o servicio 
+             |en el mercado.
+          li
+           a(data-toggle="collapse", class="collapsed aqui", href="#faq2")
+            | ¿Qué es el registro de marca?
+           .collapse#faq2
+            p
+             |La marca comercial es el signo con que 
+             |se identifica a un producto o servicio 
+             |en el mercado.
+          li
+           a(data-toggle="collapse", class="collapsed aqui", href="#faq3")
+            | ¿Qué se puede registrar como Marca?
+           .collapse#faq3
+            p
+             |La marca comercial es el signo con que 
+             |se identifica a un producto o servicio 
+             |en el mercado.
+          li
+           a(data-toggle="collapse", class="collapsed aqui", href="#faq4")
+            | ¿Qué son las clases de productos y servicios?
+           .collapse#faq4
+            p
+             |La marca comercial es el signo con que 
+             |se identifica a un producto o servicio 
+             |en el mercado.
+         a(href="#", class="d-flex justify-content-end") ver más >
+        .col-md-3.col-12.offset-md-1.offset-0.img-re
+         .img-rect
+
+  // modus
+   section.modus
+   .container
+    .modus__title
+     .modus__title--text
+      h1.text-center lorem ipsum dolor
+      h5.text-center Vestibulum ut dui sed odio elementum facilisis non sed orci. lobortis. Maecenas leo nulla, ornare varius diam eget, commodo.
+    .modus__object
+     .row
+      .col-md-6.p-4.modus__box
+       img(src="img/001_rev1.jpg", width="300px", alt="")
+       h4 lorem ipsum dolor
+       h6 Vestibulum ut dui sed odio elementum,. Vestibulum ut dui sed odio elementum,
+      .line__horizontal-01
+      .col-md-6.p-4.modus__box
+       img(src="img/001_rev1.jpg", width="300px", alt="")
+       h4 lorem ipsum dolor
+       h6 lobortis. Maecenas leo nulla, ornare varius diamlobortis. Maecenas leo nulla, ornare varius diam
+  
+  // contact 1
+   section.contact
+   include components/contact_1.pug
+
+  // proyects
+   section.project
+   .container
+    .project__title
+     .project__title--text
+      h1.text-left Proyectos
+      .line__vertical-05
+      h5.text-left Vestibulum ut dui sed odio elementum facilisis non sed orci. lobortis. Maecenas leo nulla, ornare varius diam eget, commodo.
+    .row.project__box
+     .col-md-4
+      .ok
+      h4 Lorem ipsum dolor
+      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ab, voluptate tempore enim sed maiores odio vitae explicabo eum velit fugit minus nostrum quibusdam delectus hic fuga doloribus mollitia exercitationem?
+      a(href="#", class="d-md-flex justify-content-md-end")
+       button(type="button", class="btn btn-lighting") Ver
+     .col-md-4
+      .ok
+      h4 Lorem ipsum dolor
+      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ab, voluptate tempore enim sed maiores odio vitae explicabo eum velit fugit minus nostrum quibusdam delectus hic fuga doloribus mollitia exercitationem?
+      a(href="#", class="d-md-flex justify-content-md-end")
+       button(type="button", class="btn btn-lighting") Ver
+     .col-md-4
+      .ok
+      h4 Lorem ipsum dolor
+      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ab, voluptate tempore enim sed maiores odio vitae explicabo eum velit fugit minus nostrum quibusdam delectus hic fuga doloribus mollitia exercitationem?
+      a(href="#", class="d-md-flex justify-content-md-end")
+       button(type="button", class="btn btn-lighting") Ver
+
+  // Contact 2
+  section.contact
+   include components/contact_2.pug
+
+  // footer
+   include base/footer.pug

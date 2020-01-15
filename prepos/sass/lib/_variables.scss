@@ -1,0 +1,49 @@
+// colors
+$color-primary: #315172;
+$color-secondary: #f3d531;
+$color-variation: #26435e;
+$color-alert: #1a3046;
+$color-lighting: #ffffff;
+// 1 #00B53C 2 #029e35 variation
+
+// colors grey
+$color-grey: #64707c;
+$color-lightgrey: lighten($color-grey, 30%);
+$color-lightengrey: lighten($color-grey, 50%);
+$color-darkengrey: darken($color-grey, 25%);
+
+// fonts
+$font1: 'Roboto Condensed', sans-serif;
+$font2: 'Libre Franklin', sans-serif;
+
+// font-size
+$fontS1: 15px;
+$fontS2: 20px;
+$fontS4: 23px;
+$fontS3: 40px;
+
+// Shadow
+$shadow1: -1.8px 4.7px 32.7px 5.3px rgba(39, 92, 20, 0.22);
+$shadow2: -22.6px 58.8px 122px 0 rgba(39, 92, 20, 0.13);
+$shadow3: -8.5px 14.7px 27.6px 1.5px rgba($color-lightgrey, .3);
+
+// Breakpoints
+$breakXl: 1200px;
+$breakLg: 992px;
+$breakMd: 768px;
+$breakSm: 576px;
+$breakXs: 425px;
+$breakXxs: 375px;
+$break0: 320px;
+
+// Logo sizes
+@mixin logolg {
+    width: 220px;
+}
+
+// Lines
+@mixin line1 {
+    border-top: 4px solid $color-secondary;
+    position: relative;
+    padding-top: 2rem;
+}

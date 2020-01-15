@@ -1,0 +1,19 @@
+.contact {
+    height: 150px;
+    background-color: $color-primary;
+    display: flex;
+    align-items: center;
+    &-1__title {
+        h4 {
+            color: $color-lighting;
+        }
+        h6 {
+            color: $color-lighting;
+        }
+    }
+    .contact__btn {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+}

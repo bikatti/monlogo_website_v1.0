@@ -1,0 +1,8 @@
+mixin projectBox(link,images,name,title,subtitle)
+ a(href=""+link)
+  .carousel-item-mon
+   img(class="carousel-item__img", src="img/"+images, alt="project"+name)
+   .carousel-item__details
+    img(class="carousel-item__details--img", src="img/"+images, alt="Play icon")
+    h2(class="carousel-item__details--title")=title
+    p(class="carousel-item__details--subtitle")=subtitle

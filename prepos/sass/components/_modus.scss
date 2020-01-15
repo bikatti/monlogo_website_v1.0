@@ -1,0 +1,36 @@
+.modus {
+    height: 600px;
+    background-color: $color-variation;
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    &__title {
+        display: flex;
+        justify-content: center;
+        &--text {
+            width: 600px;
+        }
+        h1 {
+            color: $color-lighting;
+        }
+        h5 {
+            color: $color-lighting;
+            font-family: $font2;
+        }
+    }
+    &__object {
+        width: 100%;
+        h4 {
+            padding-top: 10px;
+            color: $color-lighting;
+        }
+        h6 {
+            color: $color-lighting;
+        }
+        img {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
