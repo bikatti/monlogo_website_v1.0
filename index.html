@@ -170,60 +170,84 @@
         </div>
       </div>
     </section>
-    <!-- modus
-    section.modus
-    .container
-     .modus__title
-      .modus__title--text
-       h1.text-center lorem ipsum dolor
-       h5.text-center Vestibulum ut dui sed odio elementum facilisis non sed orci. lobortis. Maecenas leo nulla, ornare varius diam eget, commodo.
-     .modus__object
-      .row
-       .col-md-6.p-4.modus__box
-        img(src="img/001_rev1.jpg", width="300px", alt="")
-        h4 lorem ipsum dolor
-        h6 Vestibulum ut dui sed odio elementum,. Vestibulum ut dui sed odio elementum,
-       .line__horizontal-01
-       .col-md-6.p-4.modus__box
-        img(src="img/001_rev1.jpg", width="300px", alt="")
-        h4 lorem ipsum dolor
-        h6 lobortis. Maecenas leo nulla, ornare varius diamlobortis. Maecenas leo nulla, ornare varius diam
-    
-    -->
-    <!-- contact 1
-    section.contact
-    include components/contact_1.pug
-    
-    -->
-    <!-- proyects
-    section.project
-    .container
-     .project__title
-      .project__title--text
-       h1.text-left Proyectos
-       .line__vertical-05
-       h5.text-left Vestibulum ut dui sed odio elementum facilisis non sed orci. lobortis. Maecenas leo nulla, ornare varius diam eget, commodo.
-     .row.project__box
-      .col-md-4
-       .ok
-       h4 Lorem ipsum dolor
-       p Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ab, voluptate tempore enim sed maiores odio vitae explicabo eum velit fugit minus nostrum quibusdam delectus hic fuga doloribus mollitia exercitationem?
-       a(href="#", class="d-md-flex justify-content-md-end")
-        button(type="button", class="btn btn-lighting") Ver
-      .col-md-4
-       .ok
-       h4 Lorem ipsum dolor
-       p Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ab, voluptate tempore enim sed maiores odio vitae explicabo eum velit fugit minus nostrum quibusdam delectus hic fuga doloribus mollitia exercitationem?
-       a(href="#", class="d-md-flex justify-content-md-end")
-        button(type="button", class="btn btn-lighting") Ver
-      .col-md-4
-       .ok
-       h4 Lorem ipsum dolor
-       p Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ab, voluptate tempore enim sed maiores odio vitae explicabo eum velit fugit minus nostrum quibusdam delectus hic fuga doloribus mollitia exercitationem?
-       a(href="#", class="d-md-flex justify-content-md-end")
-        button(type="button", class="btn btn-lighting") Ver
-    
-    -->
+    <!-- modus-->
+    <section class="modus">
+      <div class="container">
+        <div class="modus__title">
+          <div class="modus__title--text">
+            <h1 class="text-center">lorem ipsum dolor</h1>
+            <h5 class="text-center">Vestibulum ut dui sed odio elementum facilisis non sed orci. lobortis. Maecenas leo nulla, ornare varius diam eget, commodo.</h5>
+          </div>
+        </div>
+        <div class="modus__object">
+          <div class="row">
+            <div class="col-md-6 col-12 modus__box">
+              <div class="modus--img"><img src="img/001_rev1.jpg" alt=""/></div>
+              <h3>Lorem ipsum dolor</h3>
+              <h6>lobortis. Maecenas leo nulla, ornare varius diamlobortis. Maecenas leo nulla, ornare varius diam lobortis. Maecenas leo nulla, ornare varius diamlobortis. Maecenas leo nulla, ornare varius diam</h6>
+            </div>
+            <div class="line__horizontal-01"></div>
+            <div class="col-md-6 col-12 modus__box">
+              <div class="modus--img"><img src="img/001_rev1.jpg" alt=""/></div>
+              <h3>Lorem ipsum dolor</h3>
+              <h6>lobortis. Maecenas leo nulla, ornare varius diamlobortis. Maecenas leo nulla, ornare varius diam lobortis. Maecenas leo nulla, ornare varius diamlobortis. Maecenas leo nulla, ornare varius diam</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact 1-->
+    <section class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 col-12">
+            <div class="contact-1__title">
+              <div class="contact-1--text">
+                <h4 class="text-left">Lorem ipsum dolor ipsum dolor</h4>
+                <div class="line__vertical-06"></div>
+                <h6 class="text-left">Vestibulum ut dui sed odio elementum facilisis non sed orci. lobortis. Maecenas leo nulla, ornare varius diam eget, commodo. ornare varius diam eget, commodo.</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-6 d-flex justify-content-end contact__btn p-0"><a href="#">
+              <button class="btn btn-lighting" type="button">Contactenos</button></a></div>
+          <div class="col-md-3 col-6 contact__btn p-0"><a href="#">
+              <button class="btn btn-secondary" type="button">Cómo funcionamos</button></a></div>
+        </div>
+      </div>
+    </section>
+    <!-- proyects-->
+    <section class="project">
+      <div class="container">
+        <div class="project__title">
+          <div class="project__title--text">
+            <h1 class="text-left">Proyectos</h1>
+            <div class="line__vertical-05"></div>
+            <h5 class="text-left">Vestibulum ut dui sed odio elementum facilisis non sed orci. lobortis. Maecenas leo nulla, ornare varius diam eget, commodo.</h5>
+          </div>
+        </div>
+        <div class="row project__box">
+          <div class="col-md-4 col-12">
+            <div class="ok"></div>
+            <h4>Lorem ipsum dolor</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ab, voluptate tempore enim sed maiores odio vitae explicabo eum velit fugit minus nostrum quibusdam delectus hic fuga doloribus mollitia exercitationem?</p><a class="d-flex justify-content-end" href="#">
+              <button class="btn btn-outline-secondary" type="button">Ver</button></a>
+          </div>
+          <div class="col-md-4 col-12">
+            <div class="ok"></div>
+            <h4>Lorem ipsum dolor</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ab, voluptate tempore enim sed maiores odio vitae explicabo eum velit fugit minus nostrum quibusdam delectus hic fuga doloribus mollitia exercitationem?</p><a class="d-flex justify-content-end" href="#">
+              <button class="btn btn-outline-secondary" type="button">Ver</button></a>
+          </div>
+          <div class="col-md-4 col-12">
+            <div class="ok"></div>
+            <h4>Lorem ipsum dolor</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ab, voluptate tempore enim sed maiores odio vitae explicabo eum velit fugit minus nostrum quibusdam delectus hic fuga doloribus mollitia exercitationem?</p><a class="d-flex justify-content-end" href="#">
+              <button class="btn btn-outline-secondary" type="button">Ver</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Contact 2-->
     <section class="contact">
       <div class="container">
@@ -242,7 +266,59 @@
         </div>
       </div>
     </section>
-    <!-- footerinclude base/footer.pug
-    -->
+    <!-- footer-->
+    <footer>
+      <div class="footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-3 col-12 offset-md-1">
+              <div class="footer--logo"><a href="index.html">
+                  <div class="logo logo--footer"><img src="img/brand/imagotipo_rgb.png" alt="logo brand"/></div></a></div>
+            </div>
+            <div class="col-md-1 d-none d-md-block offset-md-4">
+              <h5>Compañia</h5><a href="#">
+                <p>Acerca de</p></a><a href="#">
+                <p>Contacto</p></a>
+            </div>
+            <div class="col-md-1 d-none d-md-block companiabottom"><a href="#">
+                <p>Ayuda</p></a><a href="#">
+                <p>Blog</p></a></div>
+            <div class="col-md-1 d-none d-md-block">
+              <h5>Servicios</h5><a href="#">
+                <p>Categorías</p></a><a href="#">
+                <p>Proyectos</p></a>
+            </div>
+          </div>
+          <div class="pd--monlogo container d-none d-sm-block">
+            <div class="d-flex justify-content-center justify-content-md-start"><a href="#">
+                <p class="p-1">© monlogo</p></a><a href="#">
+                <p class="p-1">Condiciones</p></a><a href="#">
+                <p class="p-1">Mapa del sitio</p></a><img class="img__planeta" src="img/iconos/planeta.png" alt="planeta"/><a href="#">
+                <p class="p-1">español</p></a><a href="#">
+                <p class="p-1">English</p></a><a class="ml-md-auto" href="#"><img src="img/iconos/facebook.png" alt="facebook"/></a><a href="#"><img src="img/iconos/instagram.png" alt="instagram"/></a><a href="#"><img src="img/iconos/whatsapp.png" alt="facebook"/></a></div>
+          </div>
+          <div class="pd--monlogo container d-block d-sm-none">
+            <div class="row d-flex justify-content-center">
+              <div class="col-12"><a href="#">
+                  <p class="p-1 text-center">© monlogo</p></a></div>
+              <div class="col-12"><a href="#">
+                  <p class="p-1">Condiciones</p></a><a href="#">
+                  <p class="p-1">Ayuda</p></a><a href="#">
+                  <p class="p-1">Mapa del sitio</p></a></div>
+              <div class="col-12"><img class="img__planeta" src="img/iconos/planeta.png" alt="planeta"/><a href="#">
+                  <p class="p-1">español</p></a><a href="#">
+                  <p class="p-1">English</p></a></div>
+              <div class="col-12"><a class="ml-md-auto" href="#"><img src="img/iconos/facebook.png" alt="facebook"/></a><a href="#"><img src="img/iconos/instagram.png" alt="instagram"/></a><a href="#"><img src="img/iconos/whatsapp.png" alt="facebook"/></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Optional JavaScript-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

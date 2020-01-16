@@ -13,6 +13,38 @@
             margin-top: 2.5rem;
         }
     }
+    // modus
+    .modus {
+        .container {
+            max-width: 1000px;
+        }
+        .modus__box {
+            padding-right: 40px;
+            padding-left: 40px;
+        }
+        .modus--img {
+            width: 350px;
+            height: 230px;
+        }
+    }
+    // contact
+    .contact {
+        .container {
+            max-width: 1000px;
+        }
+    }
+    // project
+    .project {
+        height: 660px;
+        .container {
+            max-width: 1000px;
+        }
+        .project__title {
+            h5 {
+                font-size: $fontS2 - 2;
+            }
+        }
+    }
 }
 @media screen and (max-width: $breakLg) {
     // -*-*Index*-*-
@@ -70,6 +102,42 @@
         height: 620px;
         .container {
             max-width: 900px;
+        }
+    }
+    // modus
+    .modus {
+        .container {
+            max-width: 900px;
+        }
+        .modus--img {
+            width: 300px;
+            height: 230px;
+        }
+    }
+    // contact
+    .contact {
+        .container {
+            max-width: 800px;
+        }
+    }
+    // project
+    .project {
+        .container {
+            max-width: 900px;
+        }
+        .project__title {
+            h5 {
+                font-size: $fontS2 - 2;
+            }
+        }
+    }
+    // footer
+    .footer {
+        .container-fluid {
+            max-width: 1000px;
+        }
+        .container {
+            max-width: 800px;
         }
     }
 }
@@ -149,6 +217,99 @@
             }
         }
     }
+    // modus
+    .modus {
+        height: 1050px;
+        .container {
+            max-width: 620px;
+        }
+        .modus__title {
+            &--text {
+                width: 500px;
+            }
+            h5 {
+                font-size: $fontS2 - 5;
+            }
+        }
+        .modus__box {
+            padding-bottom: 80px;
+        }
+        .modus--img {
+            width: 300px;
+            height: 230px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 10px;
+        }
+    }
+    // contact
+    .contact {
+        height: 200px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        .container {
+            max-width: 540px;
+        }
+        .contact__btn {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    // project
+    .project {
+        height: 1350px;
+        .container {
+            max-width: 540px;
+        }
+        .project__title {
+            width: 90%;
+            h5 {
+                font-family: $font2;
+                font-size: $fontS1 + 1;
+            }
+        }
+        .project__box {
+            .col-12 {
+                padding-bottom: 60px;
+            }
+            .col-12:last-child {
+                padding-bottom: 10px;
+            }
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+    // footer
+    .footer {
+        height: 230px;
+        .container {
+            max-width: 600px;
+        }
+        .footer--logo {
+            text-align: center;
+        }
+        a p {
+            margin-top: 1px;
+        }
+        .pd--monlogo {
+            img {
+                width: 25px;
+                height: 25px;
+                margin-left: 8px;
+                margin-right: 8px;
+            }
+        }
+    }
+    .logo.logo--footer {
+        img {
+            width: 220px;
+            margin-bottom: 20px;
+        }
+    }
 }
 @media screen and (max-width: $breakSm) {
     // -*-*Index*-*-
@@ -203,6 +364,91 @@
             &--text a {
                 margin-top: 30px;
             }
+        }
+    }
+    // faq
+    .faq-index {
+        height: 900px;
+    }
+    // modus
+    .modus {
+        height: 1050px;
+        .container {
+            max-width: 400px;
+        }
+        .modus__title {
+            padding-bottom: 30px;
+            &--text {
+                width: 500px;
+            }
+            h5 {
+                font-size: $fontS2 - 5;
+            }
+        }
+        .modus__box {
+            padding-bottom: 80px;
+            padding-right: 4%;
+            padding-left: 0px;
+            margin-left: 2%;
+        }
+        .modus--img {
+            width: 280px;
+            height: 200px;
+        }
+    }
+    // contact
+    .contact {
+        .container {
+            max-width: 440px;
+        }
+    }
+    // project
+    .project {
+        height: 1350px;
+        .container {
+            max-width: 440px;
+        }
+    }
+    // footer
+    .footer {
+        height: 280px;
+        .container {
+            max-width: 400px;
+        }
+        .footer--logo {
+            text-align: center;
+        }
+        a p {
+            margin-top: 0;
+            margin-left: 5px;
+            margin-bottom: 2px;
+        }
+        a {
+            &:hover {
+                text-decoration: underline solid #26435e;
+            }
+            &:active {
+                text-decoration: underline solid #26435e;
+            }
+        }
+        .pd--monlogo {
+            .col-12 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            img {
+                width: 25px;
+                height: 25px;
+                margin-left: 8px;
+                margin-right: 8px;
+            }
+        }
+    }
+    .logo.logo--footer {
+        img {
+            width: 200px;
+            margin-bottom: 10px;
         }
     }
 }
@@ -281,6 +527,75 @@
             max-width: auto;
         }
     }
+    // modus
+    .modus {
+        height: 1000px;
+        .container {
+            max-width: 340px;
+        }
+        .modus__title {
+            &--text {
+                width: 500px;
+                padding-top: 40px;
+            }
+            h1 {
+                font-size: $fontS3 - 8;
+            }
+        }
+        .modus--img {
+            width: 230px;
+            height: 180px;
+        }
+    }
+    // contact
+    .contact {
+        height: 260px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        .container {
+            max-width: 360px;
+        }
+        .contact__btn {
+            display: flex;
+            justify-content: center;
+            button {
+                font-size: $fontS1;
+            }
+        }
+    }
+    // project
+    .project {
+        height: 1430px;
+        .container {
+            max-width: 360px;
+        }
+        .project__title {
+            width: 100%;
+            h5 {
+                font-size: $fontS1;
+            }
+        }
+        .project__box {
+            padding-top: 30px;
+            .col-12 {
+                padding-bottom: 60px;
+            }
+            .col-12:first-child {
+                padding-top: 0px;
+            }
+        }
+    }
+    // footer
+    .footer {
+        .container {
+            max-width: 350px;
+        }
+    }
+    .logo.logo--footer {
+        img {
+            width: 180px;
+        }
+    }
 }
 @media screen and (max-width: $breakXxs) {
     // -*-*Index*-*-
@@ -355,11 +670,68 @@
     }
     // faq
     .faq-index {
-        height: 900px;
+        height: 940px;
         .faq .faq-list {
             a {
                 font-size: $fontS1 + 2;
             }
+        }
+    }
+    // modus
+    .modus {
+        height: 1000px;
+        .container {
+            max-width: 300px;
+        }
+        .modus__title {
+            &--text {
+                width: 500px;
+                padding-top: 40px;
+            }
+            h1 {
+                font-size: $fontS3 - 8;
+            }
+            h5 {
+                font-size: $fontS2 - 5;
+            }
+        }
+        h3 {
+            font-size: $fontS2 + 5;
+        }
+        .modus--img {
+            width: 230px;
+            height: 180px;
+        }
+    }
+    // contact
+    .contact {
+        .container {
+            max-width: 330px;
+        }
+    }
+    // project
+    .project {
+        height: 1480px;
+        .container {
+            max-width: 320px;
+        }
+    }
+    // footer
+    .footer {
+        height: 300px;
+        .container {
+            max-width: 300px;
+        }
+        .pd--monlogo {
+            img {
+                width: 22px;
+                height: 22px;
+            }
+        }
+    }
+    .logo.logo--footer {
+        img {
+            width: 160px;
         }
     }
 }
@@ -374,6 +746,9 @@
         nav {
             padding-left: 15px;
             padding-right: 0px;
+        }
+        a.nav-link {
+            font-size: $fontS1 + 2;
         }
         button.navbar-toggler {
             font-size: 18px;
@@ -429,7 +804,7 @@
     }
     // faq
     .faq-index {
-        height: 880px;
+        height: 860px;
         &__title {
             padding-bottom: 5px;
             &--text h1 {
@@ -440,6 +815,88 @@
             a {
                 font-size: $fontS1;
             }
+        }
+        .img-re {
+            width: 250px;
+            height: 250px;
+        }
+    }
+    // modus
+    .modus {
+        height: 900px;
+        .container {
+            max-width: 260px;
+        }
+        .modus__title {
+            &--text {
+                width: 500px;
+                padding-top: 40px;
+            }
+            h1 {
+                font-size: $fontS3 - 10;
+            }
+            h5 {
+                font-size: $fontS2 - 7;
+            }
+        }
+        .modus--img {
+            width: 180px;
+            height: 140px;
+        }
+    }
+    // contact
+    .contact {
+        .container {
+            max-width: 260px;
+        }
+        .contact__btn {
+            display: flex;
+            justify-content: center !important;
+            button {
+                font-size: $fontS1 - 3;
+            }
+        }
+    }
+    // project
+    .project {
+        height: 1340px;
+        .container {
+            max-width: 290px;
+        }
+        .project__title {
+            width: 100%;
+            h1 {
+                font-size: $fontS3 - 10;
+            }
+            h5 {
+                font-size: $fontS1 - 1;
+            }
+        }
+        .project__box {
+            p {
+                font-size: $fontS1 - 3;
+            }
+            a button {
+                font-size: $fontS1 - 1;
+            }
+        }
+    }
+    // footer
+    .footer {
+        height: 280px;
+        .container {
+            max-width: 280px;
+        }
+        .pd--monlogo {
+            a p {
+                font-size: $fontS1 - 2;
+            }
+        }
+    }
+    .logo.logo--footer {
+        img {
+            width: 140px;
+            margin-bottom: 10px;
         }
     }
 }

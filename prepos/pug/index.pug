@@ -105,7 +105,7 @@ html(lang="en")
          .img-rect
 
   // modus
-   section.modus
+  section.modus
    .container
     .modus__title
      .modus__title--text
@@ -113,22 +113,22 @@ html(lang="en")
       h5.text-center Vestibulum ut dui sed odio elementum facilisis non sed orci. lobortis. Maecenas leo nulla, ornare varius diam eget, commodo.
     .modus__object
      .row
-      .col-md-6.p-4.modus__box
-       img(src="img/001_rev1.jpg", width="300px", alt="")
-       h4 lorem ipsum dolor
-       h6 Vestibulum ut dui sed odio elementum,. Vestibulum ut dui sed odio elementum,
+      .col-md-6.col-12.modus__box
+       .modus--img: img(src="img/001_rev1.jpg", alt="")
+       h3 Lorem ipsum dolor
+       h6 lobortis. Maecenas leo nulla, ornare varius diamlobortis. Maecenas leo nulla, ornare varius diam lobortis. Maecenas leo nulla, ornare varius diamlobortis. Maecenas leo nulla, ornare varius diam
       .line__horizontal-01
-      .col-md-6.p-4.modus__box
-       img(src="img/001_rev1.jpg", width="300px", alt="")
-       h4 lorem ipsum dolor
-       h6 lobortis. Maecenas leo nulla, ornare varius diamlobortis. Maecenas leo nulla, ornare varius diam
+      .col-md-6.col-12.modus__box
+       .modus--img: img(src="img/001_rev1.jpg", alt="")
+       h3 Lorem ipsum dolor
+       h6 lobortis. Maecenas leo nulla, ornare varius diamlobortis. Maecenas leo nulla, ornare varius diam lobortis. Maecenas leo nulla, ornare varius diamlobortis. Maecenas leo nulla, ornare varius diam
   
   // contact 1
-   section.contact
+  section.contact
    include components/contact_1.pug
 
   // proyects
-   section.project
+  section.project
    .container
     .project__title
      .project__title--text
@@ -136,28 +136,28 @@ html(lang="en")
       .line__vertical-05
       h5.text-left Vestibulum ut dui sed odio elementum facilisis non sed orci. lobortis. Maecenas leo nulla, ornare varius diam eget, commodo.
     .row.project__box
-     .col-md-4
+     .col-md-4.col-12
       .ok
       h4 Lorem ipsum dolor
       p Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ab, voluptate tempore enim sed maiores odio vitae explicabo eum velit fugit minus nostrum quibusdam delectus hic fuga doloribus mollitia exercitationem?
-      a(href="#", class="d-md-flex justify-content-md-end")
-       button(type="button", class="btn btn-lighting") Ver
-     .col-md-4
+      a(href="#", class="d-flex justify-content-end")
+       button(type="button", class="btn btn-outline-secondary") Ver
+     .col-md-4.col-12
       .ok
       h4 Lorem ipsum dolor
       p Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ab, voluptate tempore enim sed maiores odio vitae explicabo eum velit fugit minus nostrum quibusdam delectus hic fuga doloribus mollitia exercitationem?
-      a(href="#", class="d-md-flex justify-content-md-end")
-       button(type="button", class="btn btn-lighting") Ver
-     .col-md-4
+      a(href="#", class="d-flex justify-content-end")
+       button(type="button", class="btn btn-outline-secondary") Ver
+     .col-md-4.col-12
       .ok
       h4 Lorem ipsum dolor
       p Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ab, voluptate tempore enim sed maiores odio vitae explicabo eum velit fugit minus nostrum quibusdam delectus hic fuga doloribus mollitia exercitationem?
-      a(href="#", class="d-md-flex justify-content-md-end")
-       button(type="button", class="btn btn-lighting") Ver
+      a(href="#", class="d-flex justify-content-end")
+       button(type="button", class="btn btn-outline-secondary") Ver
 
   // Contact 2
   section.contact
    include components/contact_2.pug
 
   // footer
-   include base/footer.pug
+  include base/footer.pug

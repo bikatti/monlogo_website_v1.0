@@ -47,7 +47,7 @@
         transition-delay: 0s, 0s, 0s;
     }
 }
-a.btn {
+a.btn, a .btn {
     border-radius: 20px;
     &.btn-outline-secondary {
         color: $color-primary;

@@ -22,7 +22,7 @@
             color: $color-grey;
         }
         &:active {
-            text-decoration: underline wavy $color-variation;
+            text-decoration: underline solid $color-variation;
         }
     }
 }

@@ -1,6 +1,7 @@
 .contact {
     height: 150px;
     background-color: $color-primary;
+    border: 1px solid $color-primary;
     display: flex;
     align-items: center;
     &-1__title {

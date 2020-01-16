@@ -450,12 +450,12 @@ a:hover {
     -o-transition-delay: 0s, 0s, 0s;
     transition-delay: 0s, 0s, 0s; }
 
-a.btn {
+a.btn, a .btn {
   border-radius: 20px; }
-  a.btn.btn-outline-secondary {
+  a.btn.btn-outline-secondary, a .btn.btn-outline-secondary {
     color: #315172;
     border-color: #315172; }
-    a.btn.btn-outline-secondary:hover {
+    a.btn.btn-outline-secondary:hover, a .btn.btn-outline-secondary:hover {
       color: #ffffff;
       background-color: #315172;
       border-color: none;
@@ -507,8 +507,8 @@ h2 {
     .header a.nav-link:visited {
       color: #64707c; }
     .header a.nav-link:active {
-      -webkit-text-decoration: underline wavy #26435e;
-      text-decoration: underline wavy #26435e; }
+      -webkit-text-decoration: underline solid #26435e;
+      text-decoration: underline solid #26435e; }
 
 .logo.logo__header img {
   width: 150px; }
@@ -868,32 +868,47 @@ h2 {
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center; }
+    justify-content: center;
+    padding-bottom: 20px; }
     .modus__title--text {
-      width: 600px; }
+      width: 550px; }
     .modus__title h1 {
       color: #ffffff; }
     .modus__title h5 {
       color: #ffffff;
-      font-family: "Libre Franklin", sans-serif; }
+      font-family: "Libre Franklin", sans-serif;
+      font-size: 18px; }
   .modus__object {
     width: 100%; }
-    .modus__object h4 {
+    .modus__object h3 {
       padding-top: 10px;
       color: #ffffff; }
     .modus__object h6 {
       color: #ffffff; }
-    .modus__object img {
+    .modus__object .modus__box {
+      padding-top: 10px;
+      padding-left: 20px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center; }
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+    .modus__object .modus--img {
+      width: 400px;
+      height: 250px;
+      position: relative; }
+      .modus__object .modus--img img {
+        -o-object-fit: cover;
+        object-fit: cover;
+        width: 120%;
+        height: 100%; }
 
 .contact {
   height: 150px;
   background-color: #315172;
+  border: 1px solid #315172;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -916,7 +931,7 @@ h2 {
     justify-content: flex-end; }
 
 .project {
-  height: 560px;
+  height: 580px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -967,6 +982,9 @@ h2 {
   .footer .companiabottom {
     position: relative;
     top: 32px; }
+  .footer .col-md-1 {
+    padding-left: 0;
+    padding-right: 0; }
 
 .logo.logo--footer img {
   width: 180px; }
@@ -977,7 +995,23 @@ h2 {
     .categories__title {
       padding-left: 55px; }
   .faq-index .faq-index__title {
-    margin-top: 2.5rem; } }
+    margin-top: 2.5rem; }
+  .modus .container {
+    max-width: 1000px; }
+  .modus .modus__box {
+    padding-right: 40px;
+    padding-left: 40px; }
+  .modus .modus--img {
+    width: 350px;
+    height: 230px; }
+  .contact .container {
+    max-width: 1000px; }
+  .project {
+    height: 660px; }
+    .project .container {
+      max-width: 1000px; }
+    .project .project__title h5 {
+      font-size: 18px; } }
 
 @media screen and (max-width: 992px) {
   .header button.navbar-toggler {
@@ -1015,7 +1049,22 @@ h2 {
   .faq-index {
     height: 620px; }
     .faq-index .container {
-      max-width: 900px; } }
+      max-width: 900px; }
+  .modus .container {
+    max-width: 900px; }
+  .modus .modus--img {
+    width: 300px;
+    height: 230px; }
+  .contact .container {
+    max-width: 800px; }
+  .project .container {
+    max-width: 900px; }
+  .project .project__title h5 {
+    font-size: 18px; }
+  .footer .container-fluid {
+    max-width: 1000px; }
+  .footer .container {
+    max-width: 800px; } }
 
 @media screen and (max-width: 768px) {
   .header a.nav-link {
@@ -1076,7 +1125,74 @@ h2 {
       width: 300px;
       height: 300px; }
       .faq-index .img-rect {
-        margin-left: 0; } }
+        margin-left: 0; }
+  .modus {
+    height: 1050px; }
+    .modus .container {
+      max-width: 620px; }
+    .modus .modus__title--text {
+      width: 500px; }
+    .modus .modus__title h5 {
+      font-size: 15px; }
+    .modus .modus__box {
+      padding-bottom: 80px; }
+    .modus .modus--img {
+      width: 300px;
+      height: 230px;
+      margin-left: auto;
+      margin-right: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding-bottom: 10px; }
+  .contact {
+    height: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    .contact .container {
+      max-width: 540px; }
+    .contact .contact__btn {
+      margin-top: 15px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+  .project {
+    height: 1350px; }
+    .project .container {
+      max-width: 540px; }
+    .project .project__title {
+      width: 90%; }
+      .project .project__title h5 {
+        font-family: "Libre Franklin", sans-serif;
+        font-size: 16px; }
+    .project .project__box .col-12 {
+      padding-bottom: 60px; }
+    .project .project__box .col-12:last-child {
+      padding-bottom: 10px; }
+    .project .project__box p {
+      margin-bottom: 0; }
+  .footer {
+    height: 230px; }
+    .footer .container {
+      max-width: 600px; }
+    .footer .footer--logo {
+      text-align: center; }
+    .footer a p {
+      margin-top: 1px; }
+    .footer .pd--monlogo img {
+      width: 25px;
+      height: 25px;
+      margin-left: 8px;
+      margin-right: 8px; }
+  .logo.logo--footer img {
+    width: 220px;
+    margin-bottom: 20px; } }
 
 @media screen and (max-width: 576px) {
   .header nav {
@@ -1108,7 +1224,68 @@ h2 {
     .us__img {
       margin-bottom: 30px; }
     .us .us__title--text a {
-      margin-top: 30px; } }
+      margin-top: 30px; }
+  .faq-index {
+    height: 900px; }
+  .modus {
+    height: 1050px; }
+    .modus .container {
+      max-width: 400px; }
+    .modus .modus__title {
+      padding-bottom: 30px; }
+      .modus .modus__title--text {
+        width: 500px; }
+      .modus .modus__title h5 {
+        font-size: 15px; }
+    .modus .modus__box {
+      padding-bottom: 80px;
+      padding-right: 4%;
+      padding-left: 0px;
+      margin-left: 2%; }
+    .modus .modus--img {
+      width: 280px;
+      height: 200px; }
+  .contact .container {
+    max-width: 440px; }
+  .project {
+    height: 1350px; }
+    .project .container {
+      max-width: 440px; }
+  .footer {
+    height: 280px; }
+    .footer .container {
+      max-width: 400px; }
+    .footer .footer--logo {
+      text-align: center; }
+    .footer a p {
+      margin-top: 0;
+      margin-left: 5px;
+      margin-bottom: 2px; }
+    .footer a:hover {
+      -webkit-text-decoration: underline solid #26435e;
+      text-decoration: underline solid #26435e; }
+    .footer a:active {
+      -webkit-text-decoration: underline solid #26435e;
+      text-decoration: underline solid #26435e; }
+    .footer .pd--monlogo .col-12 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .footer .pd--monlogo img {
+      width: 25px;
+      height: 25px;
+      margin-left: 8px;
+      margin-right: 8px; }
+  .logo.logo--footer img {
+    width: 200px;
+    margin-bottom: 10px; } }
 
 @media screen and (max-width: 425px) {
   .header nav {
@@ -1153,7 +1330,52 @@ h2 {
       .faq-index__title--text h1 {
         font-size: 32px; }
     .faq-index .container {
-      max-width: auto; } }
+      max-width: auto; }
+  .modus {
+    height: 1000px; }
+    .modus .container {
+      max-width: 340px; }
+    .modus .modus__title--text {
+      width: 500px;
+      padding-top: 40px; }
+    .modus .modus__title h1 {
+      font-size: 32px; }
+    .modus .modus--img {
+      width: 230px;
+      height: 180px; }
+  .contact {
+    height: 260px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    .contact .container {
+      max-width: 360px; }
+    .contact .contact__btn {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .contact .contact__btn button {
+        font-size: 15px; }
+  .project {
+    height: 1430px; }
+    .project .container {
+      max-width: 360px; }
+    .project .project__title {
+      width: 100%; }
+      .project .project__title h5 {
+        font-size: 15px; }
+    .project .project__box {
+      padding-top: 30px; }
+      .project .project__box .col-12 {
+        padding-bottom: 60px; }
+      .project .project__box .col-12:first-child {
+        padding-top: 0px; }
+  .footer .container {
+    max-width: 350px; }
+  .logo.logo--footer img {
+    width: 180px; } }
 
 @media screen and (max-width: 375px) {
   .header nav {
@@ -1197,9 +1419,40 @@ h2 {
     .us .us__title--text a {
       margin-top: 20px; }
   .faq-index {
-    height: 900px; }
+    height: 940px; }
     .faq-index .faq .faq-list a {
-      font-size: 17px; } }
+      font-size: 17px; }
+  .modus {
+    height: 1000px; }
+    .modus .container {
+      max-width: 300px; }
+    .modus .modus__title--text {
+      width: 500px;
+      padding-top: 40px; }
+    .modus .modus__title h1 {
+      font-size: 32px; }
+    .modus .modus__title h5 {
+      font-size: 15px; }
+    .modus h3 {
+      font-size: 25px; }
+    .modus .modus--img {
+      width: 230px;
+      height: 180px; }
+  .contact .container {
+    max-width: 330px; }
+  .project {
+    height: 1480px; }
+    .project .container {
+      max-width: 320px; }
+  .footer {
+    height: 300px; }
+    .footer .container {
+      max-width: 300px; }
+    .footer .pd--monlogo img {
+      width: 22px;
+      height: 22px; }
+  .logo.logo--footer img {
+    width: 160px; } }
 
 @media screen and (max-width: 320px) {
   h6 {
@@ -1207,6 +1460,8 @@ h2 {
   .header nav {
     padding-left: 15px;
     padding-right: 0px; }
+  .header a.nav-link {
+    font-size: 17px; }
   .header button.navbar-toggler {
     font-size: 18px; }
   .logo.logo__header img {
@@ -1237,10 +1492,61 @@ h2 {
       .us .us__title--text a button {
         font-size: 15px; }
   .faq-index {
-    height: 880px; }
+    height: 860px; }
     .faq-index__title {
       padding-bottom: 5px; }
       .faq-index__title--text h1 {
         font-size: 30px; }
     .faq-index .faq .faq-list a {
-      font-size: 15px; } }
+      font-size: 15px; }
+    .faq-index .img-re {
+      width: 250px;
+      height: 250px; }
+  .modus {
+    height: 900px; }
+    .modus .container {
+      max-width: 260px; }
+    .modus .modus__title--text {
+      width: 500px;
+      padding-top: 40px; }
+    .modus .modus__title h1 {
+      font-size: 30px; }
+    .modus .modus__title h5 {
+      font-size: 13px; }
+    .modus .modus--img {
+      width: 180px;
+      height: 140px; }
+  .contact .container {
+    max-width: 260px; }
+  .contact .contact__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important; }
+    .contact .contact__btn button {
+      font-size: 12px; }
+  .project {
+    height: 1340px; }
+    .project .container {
+      max-width: 290px; }
+    .project .project__title {
+      width: 100%; }
+      .project .project__title h1 {
+        font-size: 30px; }
+      .project .project__title h5 {
+        font-size: 14px; }
+    .project .project__box p {
+      font-size: 12px; }
+    .project .project__box a button {
+      font-size: 14px; }
+  .footer {
+    height: 280px; }
+    .footer .container {
+      max-width: 280px; }
+    .footer .pd--monlogo a p {
+      font-size: 13px; }
+  .logo.logo--footer img {
+    width: 140px;
+    margin-bottom: 10px; } }
