@@ -1,0 +1,96 @@
+.explanation {
+    height: 700px;
+    background: linear-gradient(to top, $color-lightengrey 0%, $color-lighting 100%);
+    display: flex;
+    align-items: center;
+    .container-fluid {
+        max-width: 1150px;
+    }
+    .explanation-1 {
+        padding-top: 1.5rem;
+    }
+}
+
+.box-explanation {
+    height: 830px;
+    background-image: linear-gradient(to top, $color-variation, $color-primary);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    .boxes--fly-1 {
+        display: flex;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        position: relative;
+        left: -40px;
+    }
+    .boxes__img--fly-1 {
+        @include boxes--img-1;
+        background-color: $color-secondary;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .boxes__text--fly-1 {
+        @include boxes--fly-1;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        margin-right: 30px;
+    }
+    .boxes__img--fly-1, .boxes__text--fly-1 {
+        position: relative;
+        left: 80px;
+    }
+    .boxes--fly-2 {
+        display: flex;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+    .boxes__img--fly-2 {
+        @include boxes--img-1;
+        background-color: $color-primary;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        margin-left: 20px;
+        margin-right: 80px;
+    }
+    .boxes__text--fly-2 {
+        @include boxes--fly-1;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .boxes__img--fly-2, .boxes__text--fly-2 {
+        position: relative;
+        left: 160px;
+    }
+    .boxes--fly-3 {
+        display: flex;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+    .boxes__text--fly-3 {
+        @include boxes--fly-2;
+        margin-left: 50px;
+        margin-right: 80px;
+        position: relative;
+        left: 80px;
+        .boxes--text {
+            width: 65%;
+        }
+    }
+    .boxes__text--fly-4 {
+        @include boxes--fly-3;
+        &.right {
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+        &.left {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    }
+    .blur {
+        filter: blur(.8px);
+        opacity: .8;
+    }
+}

@@ -1,5 +1,7 @@
-.hero-index {
+.hero {
     height: 380px;
+}
+.hero-index {
     background: $color-lighting;
     display: flex;
     align-items: center;
@@ -7,4 +9,9 @@
     .hero__title {
         width: 45%;
     }
+}
+.hero-service {
+    background: $color-variation;
+    display: flex;
+    align-items: center;
 }

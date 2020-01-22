@@ -26,6 +26,7 @@ $fontS3: 40px;
 $shadow1: -1.8px 4.7px 32.7px 5.3px rgba(39, 92, 20, 0.22);
 $shadow2: -22.6px 58.8px 122px 0 rgba(39, 92, 20, 0.13);
 $shadow3: -8.5px 14.7px 27.6px 1.5px rgba($color-lightgrey, .3);
+$shadow4: -4px 6.9px 17.5px 6.5px rgba(49, 81, 114, 0.09);
 
 // Breakpoints
 $breakXl: 1200px;
@@ -35,15 +36,3 @@ $breakSm: 576px;
 $breakXs: 425px;
 $breakXxs: 375px;
 $break0: 320px;
-
-// Logo sizes
-@mixin logolg {
-    width: 220px;
-}
-
-// Lines
-@mixin line1 {
-    border-top: 4px solid $color-secondary;
-    position: relative;
-    padding-top: 2rem;
-}

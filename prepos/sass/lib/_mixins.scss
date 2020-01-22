@@ -1,0 +1,51 @@
+// Logo sizes
+@mixin logolg {
+    width: 220px;
+}
+
+// Lines
+@mixin line1 {
+    border-top: 4px solid $color-secondary;
+    position: relative;
+    padding-top: 2rem;
+}
+
+// Boxes fly
+@mixin boxes--fly-1 {
+    height: 200px;
+    width: 550px;
+    background-color: $color-lighting;
+    box-shadow: $shadow1;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+@mixin boxes--img-1 {
+    height: 200px;
+    width: 250px;
+    box-shadow: $shadow1;
+    position: relative;
+    border-radius: 10px;
+}
+@mixin boxes--fly-2 {
+    height: 200px;
+    width: 820px;
+    background-color: $color-lighting;
+    box-shadow: $shadow1;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+@mixin boxes--img-2 {
+    height: 200px;
+    width: 250px;
+    background-color: $color-primary;
+    box-shadow: $shadow1;
+    position: relative;
+    border-radius: 10px;
+}
+@mixin boxes--fly-3 {
+    height: 200px;
+    width: 200px;
+    background-color: $color-lighting;
+    box-shadow: $shadow1;
+    padding: 1.5rem;
+}
