@@ -726,8 +726,8 @@
     .categories__s {
         height: 1400px;
         .categories__text {
-            max-width: 95%;
-            margin-right: 5px;
+            max-width: 98%;
+            padding-left: 0;
         }
         .categories__box {
             flex-direction: column;
@@ -999,16 +999,17 @@
     }
     .categories__s {
         height: 1700px;
-        .categories__text {
-            max-width: 90%;
-        }
         .categories__box {
             p {
                 font-size: $fontS1 - 2;
             }
         }
         .categories__box-1 {
+            width: 90vw;
             height: 500px;
+        }
+        .categories__box-2 {
+            width: 90vw;
         }
     }
     // Explanation
@@ -1200,7 +1201,7 @@
     .categories__s {
         height: 1800px;
         .categories__box-1 {
-            height: 520px;
+            height: 530px;
         }
     }
     // Explanation
@@ -1216,6 +1217,12 @@
             p {
                 padding-top: 10px;
             }
+        }
+    }
+    // Boxes explanation
+    .box-explanation {
+        .boxes__text--fly-2 {
+            height: 300px;
         }
     }
 }
