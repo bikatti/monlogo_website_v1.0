@@ -3,6 +3,9 @@ mixin projectBox(link,images,name,title,subtitle)
   .carousel-item-mon
    img(class="carousel-item__img", src="img/"+images, alt="project"+name)
    .carousel-item__details
-    img(class="carousel-item__details--img", src="img/"+images, alt="Play icon")
-    h2(class="carousel-item__details--title")=title
+    span.badge.badge-primary
+     img(class="carousel-item__details--img", src="img/"+images, alt="Play icon")
+     h6(class="carousel-item__details--title")=title
+    h3.carousel-p=title
     p(class="carousel-item__details--subtitle")=subtitle
+    p(class="carousel-item__details--button") Para saber más ->

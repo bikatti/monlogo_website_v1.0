@@ -6,6 +6,19 @@
         &__title {
             padding-left: 55px;
         }
+        .carousel-item__details:hover {
+            padding-left: 2rem;
+        }
+        .carousel-item__details--subtitle {
+            font-size: $fontS1 - 3;
+            top: -80px;
+        }
+        .carousel-item__details--button {
+            left: 0;
+        }
+        .badge-primary {
+            bottom: -130px;
+        }
     }
     // faq
     .faq-index {
@@ -89,6 +102,16 @@
                 width: 70%;
                 margin: 0;
             }
+        }
+        .carousel-item__details--img {
+            width: 20px;
+            height: 20px;
+        }
+        .carousel-item__details--title {
+            font-size: $fontS1 - 2;
+        }
+        .badge-primary {
+            bottom: -100px;
         }
     }
     // Us
@@ -174,6 +197,9 @@
         .carousel-item-mon {
             width: 38vw;
             height: 38vw;
+        }
+        .badge-primary {
+            bottom: -110px;
         }
     }
     // Us
@@ -346,6 +372,10 @@
             width: 48vw;
             height: 48vw;
         }
+        .carousel-item__details:hover {
+            padding-left: 1rem;
+            padding-top: 6rem;
+        }
     }
     // us
     .us {
@@ -489,6 +519,20 @@
         .carousel-item-mon {
             width: 60vw;
             height: 60vw;
+        }
+        .carousel-item__details:hover {
+            padding-left: 1rem;
+            padding-top: 7rem;
+            h3 {
+                font-size: $fontS2 + 5;
+            }
+        }
+        .carousel-item__details--subtitle {
+            font-size: $fontS1 - 5;
+        }
+        .badge-primary {
+            bottom: -100px;
+            left: -5px;
         }
     }
     // us
@@ -648,6 +692,19 @@
             width: 70vw;
             height: 70vw;
         }
+        .carousel-item__details:hover {
+            padding-left: 1rem;
+            padding-top: 8rem;
+            h3 {
+                font-size: $fontS2;
+            }
+        }
+        .carousel-item__details--subtitle {
+            font-size: $fontS1 - 6;
+        }
+        .carousel-item__details--button {
+            font-size: $fontS1 - 2;
+        }
     }
     // us
     .us {
@@ -775,6 +832,10 @@
     // Categories
     .categories {
         height: 490px;
+        .badge-primary {
+            bottom: -90px;
+            left: -5px;
+        }
     }
     // us
     .us {
