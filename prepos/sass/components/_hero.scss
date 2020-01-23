@@ -8,6 +8,9 @@
     padding-left: 100px;
     .hero__title {
         width: 45%;
+        .btn {
+            font-size: $fontS2;
+        }
     }
 }
 .hero-service {

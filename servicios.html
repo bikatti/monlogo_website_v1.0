@@ -40,11 +40,16 @@
     <!-- Categories-->
     <section class="categories-s">
       <div class="container">
-        <div class="row categories__title"></div>
-        <div class="col-12 categories__title--text">
-          <h1 class="text--left">Elige una categoria</h1>
+        <div class="categories__title">
+          <div class="categories__title--text">
+            <h1 class="text--left">Elige una categoria</h1>
+          </div>
         </div>
-        <div class="list-group" id="list-tab" role="tablist"><a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Identidad Corporativa</a><a class="list-group-item list-group-item-action" id="list-0-list" data-toggle="list" href="#list-0" role="tab" aria-controls="home">Diseño de interfaz de usuario</a><a class="list-group-item list-group-item-action" id="list-1-list" data-toggle="list" href="#list-1" role="tab" aria-controls="home">Desarrollo web</a></div>
+        <div data-scrollable="data-scrollable">
+          <div data-scrollable-inner="data-scrollable-inner" style="bottom: -20px;">
+            <div class="list-group category-menu" id="list-tab" role="tablist"><a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Identidad Corporativa</a><a class="list-group-item list-group-item-action" id="list-0-list" data-toggle="list" href="#list-0" role="tab" aria-controls="home">Diseño de interfaz de usuario</a><a class="list-group-item list-group-item-action" id="list-1-list" data-toggle="list" href="#list-1" role="tab" aria-controls="home">Desarrollo web</a></div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="fase">
@@ -53,12 +58,12 @@
           <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
             <div class="categories__s">
               <div class="row">
-                <div class="col-md-5">
+                <div class="col-lg-5 col-12 categories__text">
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates iste laudantium corrupti recusandae excepturi. Mollitia assumenda, cumque, alias ut nihil deserunt ipsa molestiae placeat aliquam debitis repellat repudiandae error nesciunt?</p>
                   <p><span>hola</span>El pago del servicio se hace en su totalidad en el momento de la contratación a través de transferencias via Zelle, envíos de dinero por PayPal o Airtm.</p>
                   <p><span>H</span>Todo contacto y comunicación con el cliente será vía correo electrónico y por Whatsapp.<br/>* El precio del servicio de propuesta o revisión de diseño adicional es 20 $ USD</p>
                 </div>
-                <div class="categories__box col-md-7">
+                <div class="categories__box col-lg-7 col-12">
                   <div class="categories__box-1"><span></span>
                     <h2>Pack Basico</h2>
                     <h5>desde usd$ 75</h5>
@@ -88,18 +93,18 @@
             <div class="explanation">
               <div class="container-fluid">
                 <div class="row">
-                  <div class="explanation-1 col-md-6">
+                  <div class="explanation-1 col-md-6 col-12">
                     <h2>Lorem ipsum dolor?</h2>
                     <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias porro suscipit explicabo sapiente perspiciatis</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, harum facere neque vero eius deserunt magni, ad asperiores voluptatibus eligendi ratione? Porro hic delectus aspernatur ipsum adipisci. Minima, nostrum adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, beatae ex. Vero accusantium rerum harum veniam repellendus expedita laudantium culpa odit voluptate deleniti provident amet cupiditate optio quo, omnis cum?</p>
                   </div>
-                  <div class="col-md-5">
+                  <div class="col-md-5 col-12">
                     <div class="imagen"></div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 col-12">
                     <div class="imagen"></div>
                   </div>
-                  <div class="explanation-1 col-md-6">
+                  <div class="explanation-1 col-md-6 col-12">
                     <h2>Lorem ipsum dolor?</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa eos ex cupiditate error non, et ducimus vitae rerum natus, repellat reiciendis, possimus architecto magnam delectus sint veniam! Nostrum, blanditiis delectus!</p><span>hola</span>
                     <p>El pago del servicio se hace en su totalidad en el momento de la contratación a través de transferencias via Zelle, envíos de dinero por PayPal o Airtm.</p><span>hola</span>
@@ -111,37 +116,33 @@
             </div>
             <!-- Boxes explanation-->
             <section class="box-explanation">
-              <div class="boxes--fly-1">
-                <div class="boxes__text--fly-4 blur left" style="width: 100px; position: relative; right: 40px;"></div>
-                <div class="boxes__img--fly-1"></div>
-                <div class="boxes__text--fly-1">
-                  <div class="boxes--text">
-                    <h2>Tener un logo</h2>
-                    <p>Es el embajador, la primera cara que verán de la marca. Para tener un buen logo tinene que ser legible, distinguible y atemporal. Así la marca sera recordada por el público.</p>
+              <div class="boxes--fly">
+                <div class="boxes--fly-1">
+                  <div class="boxes__img--fly-1"></div>
+                  <div class="boxes__text--fly-1">
+                    <div class="boxes--text">
+                      <h2>Tener un logo</h2>
+                      <p>Es el embajador, la primera cara que verán de la marca. Para tener un buen logo tinene que ser legible, distinguible y atemporal. Así la marca sera recordada por el público.</p>
+                    </div>
                   </div>
                 </div>
-                <div class="boxes__text--fly-4 blur right" style="width: 230px; position: relative; right: -189px;"></div>
-              </div>
-              <div class="boxes--fly-2">
-                <div class="boxes__text--fly-4 blur left" style="width: 200px;"></div>
-                <div class="boxes__text--fly-2">
-                  <div class="boxes--text">
-                    <h2>El manual de ideantidad visual</h2>
-                    <p>Es un documento que incluye los lineamiento gráficos, usos, aplicaciones y restricciones para la implementación de la marca.<br/>Esto le servirá a que si trabaja con otros diseñaores o programadores, puedan implementar correctamente la marca.</p>
+                <div class="boxes--fly-2">
+                  <div class="boxes__text--fly-2">
+                    <div class="boxes--text">
+                      <h2>El manual de ideantidad visual</h2>
+                      <p>Es un documento que incluye los lineamiento gráficos, usos, aplicaciones y restricciones para la implementación de la marca.<br/>Esto le servirá a que si trabaja con otros diseñaores o programadores, puedan implementar correctamente la marca.</p>
+                    </div>
+                  </div>
+                  <div class="boxes__img--fly-2"></div>
+                </div>
+                <div class="boxes--fly-3">
+                  <div class="boxes__text--fly-3">
+                    <div class="boxes--text">
+                      <h2>Formatos de entrega son</h2>
+                      <p>.psd, .ai, .pdf, .jpg, .png, .svg y entre otros. El manual se entregara en formato  .pdf<br/>Todos los elementos se  enviarán al correo electronico proporcionado por el cliente.</p>
+                    </div>
                   </div>
                 </div>
-                <div class="boxes__img--fly-2"></div>
-                <div class="boxes__text--fly-4 blur right" style="width: 30px; position: relative; left: 219px; padding: 0;"></div>
-              </div>
-              <div class="boxes--fly-3">
-                <div class="boxes__text--fly-4 blur left" style="width: 30px; position: relative; left: -9px;"></div>
-                <div class="boxes__text--fly-3">
-                  <div class="boxes--text">
-                    <h2>Formatos de entrega son</h2>
-                    <p>.psd, .ai, .pdf, .jpg, .png, .svg y entre otros. El manual se entregara en formato  .pdf<br/>Todos los elementos se  enviarán al correo electronico proporcionado por el cliente.</p>
-                  </div>
-                </div>
-                <div class="boxes__text--fly-4 blur right" style="position: relative; left: 151px;"></div>
               </div>
             </section>
           </div>
