@@ -897,7 +897,19 @@ h2 {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     margin-right: 20px;
-    margin-left: 20px; }
+    margin-left: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .box-explanation .boxes__img--fly-1 img {
+      -webkit-filter: grayscale(70%) brightness(80%) contrast(300%);
+      filter: grayscale(70%) brightness(80%) contrast(300%); }
   .box-explanation .boxes__text--fly-1 {
     height: 200px;
     width: 550px;
@@ -929,7 +941,19 @@ h2 {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
     margin-left: 20px;
-    margin-right: 80px; }
+    margin-right: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .box-explanation .boxes__img--fly-2 img {
+      width: 110%;
+      padding-top: 15%; }
   .box-explanation .boxes__text--fly-2 {
     height: 200px;
     width: 550px;
@@ -959,10 +983,16 @@ h2 {
     border-radius: 10px;
     margin-left: 50px;
     margin-right: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     position: relative;
     left: 8%; }
     .box-explanation .boxes__text--fly-3 .boxes--text {
       width: 65%; }
+    .box-explanation .boxes__text--fly-3 img {
+      height: 180%;
+      margin-top: -100px; }
 
 .us {
   width: 100%;
@@ -1785,7 +1815,7 @@ h2 {
       border-top-right-radius: 10px; }
     .box-explanation .boxes__text--fly-1 {
       width: auto;
-      height: 250px;
+      height: 200px;
       margin: 0;
       margin-bottom: 35px;
       border-top-right-radius: 0;
@@ -1804,6 +1834,9 @@ h2 {
       margin-bottom: 35px;
       border-bottom-left-radius: 10px;
       border-top-right-radius: 0; }
+      .box-explanation .boxes__img--fly-2 img {
+        width: 85%;
+        padding-top: 10%; }
     .box-explanation .boxes__text--fly-2 {
       width: auto;
       height: 250px;
@@ -1821,17 +1854,22 @@ h2 {
       position: static; }
     .box-explanation .boxes__text--fly-3 {
       width: 100%;
-      height: 350px;
+      height: 400px;
       left: 0;
       margin: 0;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: end;
-      -ms-flex-align: end;
-      align-items: flex-end; }
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
       .box-explanation .boxes__text--fly-3 .boxes--text {
-        width: auto; } }
+        width: auto; }
+      .box-explanation .boxes__text--fly-3 img {
+        height: 78%;
+        margin-top: -100px;
+        margin-bottom: 8%; } }
 
 @media screen and (max-width: 425px) {
   .header nav {
@@ -1958,7 +1996,14 @@ h2 {
     .box-explanation .boxes__text--fly-1 {
       height: 210px; }
     .box-explanation .boxes__text--fly-2 {
-      height: 280px; } }
+      height: 280px; }
+    .box-explanation .boxes__img--fly-2 img {
+      width: 95%;
+      margin-left: 5%;
+      padding-top: 10%; }
+    .box-explanation .boxes__text--fly-3 img {
+      height: 55%;
+      margin-top: -90px; } }
 
 @media screen and (max-width: 375px) {
   .header nav {
@@ -2190,10 +2235,19 @@ h2 {
       font-size: 14px;
       padding-top: 15px; }
   .box-explanation {
-    height: 1600px; }
+    height: 1650px; }
     .box-explanation .boxes--fly {
       max-width: 75%; }
+    .box-explanation .boxes__img--fly-1 img {
+      width: 70%; }
     .box-explanation .boxes__text--fly-1 {
       height: 230px; }
     .box-explanation .boxes__text--fly-2 {
-      height: 330px; } }
+      height: 330px; }
+    .box-explanation .boxes__img--fly-2 {
+      height: 150px; }
+      .box-explanation .boxes__img--fly-2 img {
+        width: 90%; }
+    .box-explanation .boxes__text--fly-3 img {
+      height: 50%;
+      margin-top: -90px; } }

@@ -779,7 +779,7 @@
         }
         .boxes__text--fly-1 {
             width: auto;
-            height: 250px;
+            height: 200px;
             margin: 0;
             margin-bottom: 35px;
             border-top-right-radius: 0;
@@ -798,6 +798,10 @@
             margin-bottom: 35px;
             border-bottom-left-radius: 10px;
             border-top-right-radius: 0;
+            img {
+                width: 85%;
+                padding-top: 10%;
+            }
         }
         .boxes__text--fly-2 {
             width: auto;
@@ -816,13 +820,18 @@
         }
         .boxes__text--fly-3 {
             width: 100%;
-            height: 350px;
+            height: 400px;
             left: 0;
             margin: 0;
-            display: flex;
-            align-items: flex-end;
+            flex-direction: column;
+            align-items: center;
             .boxes--text {
                 width: auto;
+            }
+            img {
+                height: 78%;
+                margin-top: -100px;
+                margin-bottom: 8%;
             }
         }
     }
@@ -1030,6 +1039,19 @@
         }
         .boxes__text--fly-2 {
             height: 280px;
+        }
+        .boxes__img--fly-2 {
+            img {
+                width: 95%;
+                margin-left: 5%;
+                padding-top: 10%;
+            }
+        }
+        .boxes__text--fly-3 {
+            img {
+                height: 55%;
+                margin-top: -90px;
+            }
         }
     }
 }
@@ -1437,15 +1459,32 @@
     }
     // Boxes explanation
     .box-explanation {
-        height: 1600px;
+        height: 1650px;
         .boxes--fly {
             max-width: 75%;
+        }
+        .boxes__img--fly-1 {
+            img {
+                width: 70%;
+            }
         }
         .boxes__text--fly-1 {
             height: 230px;
         }
         .boxes__text--fly-2 {
             height: 330px;
+        }
+        .boxes__img--fly-2 {
+            height: 150px;
+            img {
+                width: 90%;
+            }
+        }
+        .boxes__text--fly-3 {
+            img {
+                height: 50%;
+                margin-top: -90px;
+            }
         }
     }
 }
