@@ -1,0 +1,111 @@
+.hero {
+    height: 380px;
+}
+
+.hero-index {
+    height: auto;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+    background: $color-variation;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .hero__title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .hero__img {
+            width: 57vw;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            animation: walk 1.5s steps(4) infinite;
+            background: url('../../assets/img/astro/sprite_planetario_rev1.png') repeat-x;
+            background-position: 0;
+        }
+        .hero__img img {
+            object-fit: contain;
+            position: relative;
+            width: 38%;
+            top: 30px;
+            //animation: rotimgast .8s ease-in-out infinite;
+        }
+        .hero__title--text {
+            padding-left: 1rem;
+            width: 45vw;
+            h1, h6 {
+                color: $color-lighting;
+            }
+        }
+    }
+}
+@keyframes rotimgast {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(1deg);
+    }
+    25% {
+        transform: rotate(2deg);
+        top: 60px;
+    }
+    50% {
+        transform: rotate(0deg);
+        top: 40px;
+    }
+    75% {
+        transform: rotate(-1deg);
+    }
+    90% {
+        transform: rotate(-2deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes walk {
+    0% {
+        background-position: 0px;
+    }
+    100% {
+        background-position: -2467px;
+    }
+}
+.curve-container {
+    height: 120px;
+    margin-top: -1%;
+    margin-bottom: -1px;
+    overflow: hidden;
+    .curve-bg {
+        height: 100%;
+        width: 100vw;
+        /* padding-bottom: -webkit-calc(100% * 84 / 1440);
+        padding-bottom: calc(100% * 84 / 1440); */
+        background: url('../../assets/img/details/home_hero_curve_rev1.svg') no-repeat center top;
+        background-size: 100% 100%;
+    }
+    
+}
+
+.curve-container-md {
+    height: 140px;
+    background-color: $color-lightengrey;
+    margin-top: -1px;
+    margin-bottom: -1.5%;
+    overflow: hidden;
+    .curve-md {
+        height: 100%;
+        width: 100vw;
+        background: url('../../assets/img/details/home_curve_rev2.svg') no-repeat center top;
+        background-size: 100% 100%;
+    }
+}
+
+.hero-service {
+    background: $color-variation;
+    display: flex;
+    align-items: center;
+}

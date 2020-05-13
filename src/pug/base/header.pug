@@ -1,0 +1,65 @@
+header.header
+ nav(id="navw", class="navbar navbar-expand-lg navbar-light bg-monlogo fixed-top d-block")
+  .container-fluid
+   a(class="navbar-brand", href=linksUrl[1])
+    .logo.logo__header: img(src=linksUrl[1]+logoColor[0], alt="logo brand")
+  
+   div(class="collapse navbar-collapse", id="navbarSupportedContent")
+    ul(class="navbar-nav mr-auto")
+     li.nav-item
+      a(class="nav-link", href=linksUrl[1]) Home
+     li.nav-item.dropdown
+      a(class="nav-link dropdown-toggle", href="#", id="navbarDropdown", role="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false") Servicios
+      div(class="dropdown-menu", aria-labelledby="navbarDropdown")
+       a(class="dropdown-item", href=linksUrl[1]+"servicios/"+linksInternos[0]) #{service[0]}
+       a(class="dropdown-item", href=linksUrl[1]+"servicios/"+linksInternos[1]) #{service[1]}
+       a(class="dropdown-item", href=linksUrl[1]+"servicios/"+linksInternos[0]) #{service[2]}
+     li.nav-item
+      a(class="nav-link", href=linksUrl[1]+linksInternos[2]) Acerca de
+
+   div(class="collapse navbar-collapse", id="navbarSupportedContent")
+    ul(class="navbar-nav ml-auto iconos__m")
+     li.nav-item
+      a(class="nav-link", href=linksUrl[1])
+       img(src=linksUrl[1]+"assets/img/iconos/facebook-w.png", class="iconos__menu", alt="icono facebook")
+     li.nav-item
+      a(class="nav-link", href=linksExternos[0])
+       img(src=linksUrl[1]+"assets/img/iconos/instagram-w.png", class="iconos__menu", alt="icono instagram")
+     li.nav-item
+      a(class="nav-link", href=linksExternos[1])
+       img(src=linksUrl[1]+"assets/img/iconos/whatsapp-w.png", class="iconos__menu", alt="icono whatsapp")
+   a(class="btn btn-outline-secondary d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3", href=linksUrl[1]) Contacto
+
+
+ nav(id="navb", class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-none")
+  .container-fluid
+   a(class="navbar-brand", href=linksUrl[1])
+    .logo.logo__header: img(src=linksUrl[1]+logoColor[1], alt="logo brand")
+   button(class="navbar-toggler", type="button", data-toggle="collapse", data-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
+    span.navbar-toggler-icon
+  
+   div(class="collapse navbar-collapse", id="navbarSupportedContent")
+    ul(class="navbar-nav mr-auto")
+     li.nav-item
+      a(class="nav-link", href=linksUrl[1]) Home
+     li.nav-item.dropdown
+      a(class="nav-link dropdown-toggle", href="#", id="navbarDropdown", role="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false") Servicios
+      div(class="dropdown-menu", aria-labelledby="navbarDropdown")
+       a(class="dropdown-item", href=linksUrl[1]+"servicios/"+linksInternos[0]) #{service[0]}
+       a(class="dropdown-item", href=linksUrl[1]+"servicios/"+linksInternos[1]) #{service[1]}
+       a(class="dropdown-item", href=linksUrl[1]+"servicios/"+linksInternos[0]) #{service[2]}
+     li.nav-item
+      a(class="nav-link", href=linksUrl[1]+linksInternos[2]) Acerca de
+
+   div(class="collapse navbar-collapse", id="navbarSupportedContent")
+    ul(class="navbar-nav ml-auto iconos__m")
+     li.nav-item
+      a(class="nav-link", href=linksUrl[1])
+       img(src=linksUrl[1]+"assets/img/iconos/facebook.png", class="iconos__menu", alt="icono facebook")
+     li.nav-item
+      a(class="nav-link", href=linksExternos[0])
+       img(src=linksUrl[1]+"assets/img/iconos/instagram.png", class="iconos__menu", alt="icono instagram")
+     li.nav-item
+      a(class="nav-link", href=linksExternos[1])
+       img(src=linksUrl[1]+"assets/img/iconos/whatsapp.png", class="iconos__menu", alt="icono whatsapp")
+   a(class="btn btn-outline-secondary d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3", href=linksUrl[1]) Contacto

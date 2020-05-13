@@ -1,0 +1,50 @@
+.modus {
+    height: auto;
+    background-color: $color-variation;
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+    &__title {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+        &--text {
+            width: 550px;
+        }
+        h1 {
+            color: $color-lighting;
+        }
+        h5 {
+            color: $color-lighting;
+            font-family: $font2;
+            font-size: $fontS2 - 2;
+        }
+    }
+    &__object {
+        width: 100%;
+        h3 {
+            padding-top: 10px;
+            color: $color-lighting;
+        }
+        h6 {
+            color: $color-lighting;
+        }
+        .modus__box {
+            padding-top: 10px;
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .modus--img {
+            width: 400px;
+            height: 250px;
+            position: relative;
+            img {
+                object-fit: cover;
+                width: 120%;
+                height: 100%;
+            }
+        }
+    }
+}

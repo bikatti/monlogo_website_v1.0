@@ -1,0 +1,22 @@
+mixin projectBox(link=linksUrl[1],images,name,title,subtitle)
+ a(href=""+link)
+  .carousel-item-mon
+   img(class="carousel-item__img", src=linksUrl[1]+"assets/img/"+images, alt="project "+name)
+   .carousel-item__details
+    span
+     img(class="carousel-item__details--img", src="img/"+images, alt="Play icon")
+     h5(class="carousel-item__details--title")=title
+    h3.carousel-p=title
+    p(class="carousel-item__details--subtitle")=subtitle
+    p(class="carousel-item__details--button") Para saber más ->
+
+mixin serviceBox(link=linksUrl[1],n,images,name,icon,text)
+ a(href=""+link)
+  .sBox
+   .sBox__img
+    img(class="img-tam sBox__img--"+n, src=linksUrl[1]+"assets/img/"+images, alt="project "+name)
+   .sBox__details
+    img(class="sBox__details--img", src=linksUrl[1]+"assets/img/iconos/"+icon, alt="project "+name)
+    h4.sBox__details--title=name
+   .sBox__description
+    h6.sBox__desc--text=text

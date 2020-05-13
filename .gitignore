@@ -1,3 +1,9 @@
-img/
-prepros-6.config
 recursos/
+dist/assets/img
+dist/assets/fonts
+*.ai
+*.xd
+*.psd
+*.md
+*.jpg
+*.png

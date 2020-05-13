@@ -1,0 +1,29 @@
+// @import "../../dist/assets/fonts/fontawesome/scss/fontawesome.scss";
+
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin|Roboto+Condensed&display=swap');
+
+@import "lib/_variables.scss";
+@import "lib/_mixins.scss";
+@import "lib/_functions.scss";
+
+@import "layout/_bootstrap_reboot.scss";
+@import "layout/_site.scss";
+
+@import "base/_links.scss";
+@import "base/_buttons.scss";
+@import "base/_typography.scss";
+@import "base/_tables.scss";
+
+@import "components/_header.scss";
+@import "components/_hero.scss";
+//@import "components/_carousel.scss";
+@import "components/_categories.scss";
+@import "components/_text.scss";
+@import "components/_us.scss";
+@import "components/_faq.scss";
+@import "components/_modus.scss";
+@import "components/_contact.scss";
+@import "components/_project.scss";
+@import "components/_footer.scss";
+
+@import "components/_media.scss";

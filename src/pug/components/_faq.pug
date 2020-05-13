@@ -1,0 +1,51 @@
+// faq
+section.faq-index
+ .container
+  .faq-index__title
+   .faq-index__title--text
+    h1 Como operamos en Monlogo
+    .line__vertical-03
+  div(class="tab-pane fade show active", id="pills-home", role="tabpanel", aria-labelledby="pills-home-tab")
+   section.faq
+    .container
+     .row
+      .col-md-7.col-10.offset-1.offset-md-0.pb-3
+       h6.text-sm-left.text-center
+        | Si tienes dudas, aqui abajo hemos dejado algunas preguntas con sus respectivas respuesta, si su pregunta no está en las que están abajo, le invitamos a contactarnos
+       ul(id="faq-list", class="wow faq-list fadeInUp", style="visibility: visible; animation-name: fadeInUp;")
+        li
+         a(data-toggle="collapse", class="collapsed aqui", href="#faq1")
+          | ¿Porqué elegir a monlogo?
+         .collapse#faq1
+          p
+           |La marca comercial es el signo con que 
+           |se identifica a un producto o servicio 
+           |en el mercado.
+        li
+         a(data-toggle="collapse", class="collapsed aqui", href="#faq2")
+          | ¿Cómo trabajamos?
+         .collapse#faq2
+          p
+           |La marca comercial es el signo con que 
+           |se identifica a un producto o servicio 
+           |en el mercado.
+        li
+         a(data-toggle="collapse", class="collapsed aqui", href="#faq3")
+          | ¿Por donde los contacto?
+         .collapse#faq3
+          p
+           |La marca comercial es el signo con que 
+           |se identifica a un producto o servicio 
+           |en el mercado.
+        li
+         a(data-toggle="collapse", class="collapsed aqui", href="#faq4")
+          | ¿Cuál es la metodología de pago? ¿Y comó pago?
+         .collapse#faq4
+          p
+           |La marca comercial es el signo con que 
+           |se identifica a un producto o servicio 
+           |en el mercado.
+       a(href=linksUrl[1], class="d-flex justify-content-end") ver más >
+      .col-md-3.col-12.offset-md-1.offset-0.img-re
+       .img-rect
+        img(src=linksUrl[1]+"assets/img/astro/astro_faq_rev1.png", alt="")

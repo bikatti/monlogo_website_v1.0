@@ -1,0 +1,102 @@
+include lib/variables.pug
+include lib/mixins.pug
+<!DOCTYPE html>
+html(lang="en")
+ include base/head.pug
+  title Monlogo
+ body
+  // menu
+  include base/header.pug
+
+  // hero
+  section.hero-index.hero 
+   .opacity--darken
+    .container-lg.container-fluid
+     .hero__title
+      .hero__img
+       img(src=linksUrl[1]+"assets/img/astro/astro_him_rev1.png", alt="astro")
+      .hero__title--text
+       h1.text-left
+        | Lleva tu marca al
+        br
+        | siguiente nivel
+       h6 Nos dedicamos a diseñar y desarrollar productos increíbles para la web y llevar a tu marca al siguiente nivel. Haremos que tu marca sea memorable para las personas y un punto de referencia para tu industria.
+  div
+   .curve-container
+    .curve-bg
+
+  // categories
+  section.categories
+   .container-fluid
+    .row
+     .categories__title
+      .col-12.categories__title--text
+       h1.text--left
+        | Diseñamos identidad corporativa, páginas web, y más!
+       .line__vertical-01
+       h6 Creamos diseños y desarrollo web que este a la altura de tu negocio. Presiona en la imagen para ver los pack que ofrecemos en cada categoría
+     include components/categories.pug
+  div
+   .curve-container-md
+    .curve-md
+
+  // modus
+  section.modus
+   .container
+    .modus__title
+     .modus__title--text
+      h1.text-center Trabajamos de dos maneras distintas. Tú eliges
+      h5.text-center Nuestro método de trabajo se divide en dos formas de contantración, elige el que mejor se adecue a ti
+    .modus__object
+     .row
+      .col-md-6.col-12.modus__box
+       .modus--img: img(src=linksUrl[1]+"assets/img/001_rev1.jpg", alt="")
+       h3 Proyecto por fases
+       h6 El servicio que contrates se dividirá por fases, y pagaras una suma pequeña cada vez que una fase se termine
+      .line__horizontal-01
+      .col-md-6.col-12.modus__box
+       .modus--img: img(src=linksUrl[1]+"assets/img/001_rev1.jpg", alt="")
+       h3 Unir packs de servicios
+       h6 Aquí uniremos varios packs que usted necesite, y pagará cada uno una vez que se comience el trabajo
+
+  // faq
+  include components/_faq.pug
+
+  // contact 1
+   section.contact
+   include components/contact_1.pug
+
+  // proyects
+   section.project
+   .container
+    .project__title
+     .project__title--text
+      h1.text-left Proyectos
+      .line__vertical-05
+      h5.text-left Vestibulum ut dui sed odio elementum facilisis non sed orci. lobortis. Maecenas leo nulla, ornare varius diam eget, commodo.
+    .row.project__box
+     .col-md-4.col-12
+      .ok
+      h4 Lorem ipsum dolor
+      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ab, voluptate tempore enim sed maiores odio vitae explicabo eum velit fugit minus nostrum quibusdam delectus hic fuga doloribus mollitia exercitationem?
+      a(href="#", class="d-flex justify-content-end")
+       button(type="button", class="btn btn-outline-secondary") Ver
+     .col-md-4.col-12
+      .ok
+      h4 Lorem ipsum dolor
+      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ab, voluptate tempore enim sed maiores odio vitae explicabo eum velit fugit minus nostrum quibusdam delectus hic fuga doloribus mollitia exercitationem?
+      a(href="#", class="d-flex justify-content-end")
+       button(type="button", class="btn btn-outline-secondary") Ver
+     .col-md-4.col-12
+      .ok
+      h4 Lorem ipsum dolor
+      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ab, voluptate tempore enim sed maiores odio vitae explicabo eum velit fugit minus nostrum quibusdam delectus hic fuga doloribus mollitia exercitationem?
+      a(href="#", class="d-flex justify-content-end")
+       button(type="button", class="btn btn-outline-secondary") Ver
+
+  // Contact 2
+  section.contact
+   include components/contact_2.pug
+
+  // footer
+  include base/footer.pug

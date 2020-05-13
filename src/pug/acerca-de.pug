@@ -1,0 +1,32 @@
+include lib/variables.pug
+include lib/mixins.pug
+<!DOCTYPE html>
+html(lang="en")
+ include base/head.pug
+  title Acerca de
+ body
+  // menu
+  include base/header.pug
+
+  // Us
+  section.us
+   .container
+    .us__box
+     .row
+      .col-md-6.col-12.d-flex.justify-content-center
+       div.us__img
+      .col-md-6.col-12
+       .us__title
+        .us__title--text
+         h1.text--left
+          | Nos gusta crear
+         .line__vertical-02
+         h6 Hey! Somos el equipo de monlogo, nos dedidacamos a crear la imagen de una marca, tanto en la web como de forma fisica, tenemos la misión de hacer que tu marca logre llegar a muchas más personas y sea más accesible.
+         h6 Nuestra filosofia de trabajo es que crear junto al cliente un producto satisfactorio.
+
+  // Contact 2
+  section.contact
+   include components/contact_2.pug
+
+  // footer
+  include base/footer.pug
