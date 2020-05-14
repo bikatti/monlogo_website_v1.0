@@ -1,4 +1,4 @@
-header.header
+//- header.header
  nav(id="navw", class="navbar navbar-expand-lg navbar-light bg-monlogo fixed-top d-block")
   .container-fluid
    a(class="navbar-brand", href=linksUrl[1])
@@ -63,3 +63,28 @@ header.header
       a(class="nav-link", href=linksExternos[1])
        img(src=linksUrl[1]+"assets/img/iconos/whatsapp.png", class="iconos__menu", alt="icono whatsapp")
    a(class="btn btn-outline-secondary d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3", href=linksUrl[1]) Contacto
+
+nav.o-nav.sticky
+ .o-navFixedContainer
+  .o-nav__content
+   .a-brand
+    a(href=linksUrl[1]): img.a-brand__Img(src=linksUrl[1]+logoColor[1], alt="")
+
+   .a-burguer#burger
+    img.a-burguer__menu(src=linksUrl[1]+"assets/img/icons/menu.svg", alt="")
+
+   .m-itemContent
+    .a-burguerOut#burgerOut
+     img.a-burguerOut__menu(src=linksUrl[1]+"assets/img/icons/cancel.svg", alt="")
+    .a-brandMobile
+     a(href=linksUrl[1]): img.a-brandMobile__Img(src=linksUrl[1]+logoColor[1], alt="")
+    ul.m-itemContent__list
+     li: a.a-itemLink(href=linksUrl[1]+linksInternos[2]) #{titles[0]}
+     li: a.a-itemLink(href=linksUrl[1]) #{titles[1]}
+    .a-button.a-noMargin
+     a.-outlinePrimary(href=linksUrl[1]) #{titles[5]}
+
+   .m-CallToAction
+    .a-button
+     a.-outlinePrimary(href=linksUrl[1]) #{titles[5]}
+    a.a-iconFund(href=linksUrl[1]): img.a-iconFund__img(src=linksUrl[1]+"assets/img/icons/donar.png", alt="")

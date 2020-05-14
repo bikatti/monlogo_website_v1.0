@@ -1,3 +1,101 @@
+.o-hero {
+    position: relative;
+    padding-top: $spaceMd;
+    padding-bottom: $spaceMd;
+    background-color: $color-bg;
+    @include mediaQueriesMd {
+        padding-top: $spaceRg;
+        padding-bottom: $spaceRg;
+    }
+}
+
+.m-heroContent {
+    display: grid;
+    grid-template-columns: 560px 45%;
+    grid-template-rows: 340px;
+    grid-gap: 0 $spaceRg;
+    grid-template-areas: "imgHero textHero";
+    justify-content: center;
+    @include mediaQueriesMd {
+        grid-template-columns: 86%;
+        grid-template-rows: 1fr 300px;
+        grid-gap: $spaceRg 0;
+        grid-template-areas: "textHero" "imgHero";
+    }
+    @include mediaQueriesXs {
+        grid-template-columns: 100%;
+    }
+}
+
+.m-heroContent__text {
+    grid-area: textHero;
+    padding-left: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h3 {
+        color: $color-grey;
+    }
+    @include mediaQueriesLg {
+        padding-left: 0;
+    }
+}
+.a-heroContent__title {
+    max-width: 90%;
+    padding-bottom: $spaceSm;
+    h1 {
+        color: $color-lightgrey;
+    }
+    @include mediaQueriesLg {
+        max-width: 100%;
+    }
+    @include mediaQueriesXs {
+        h1 {
+            text-align: center;
+        }
+    }
+}
+
+.a-heroContent__text {
+    line-height: 1.27;
+    padding-bottom: $spaceSm;
+    .-alert {
+        color: $color-lightgrey;
+    }
+}
+
+.a-heroContent__button {
+    @include mediaQueriesMd {
+        // display: flex;
+        text-align: center;
+    }
+    @include mediaQueriesXs {
+        .-wierdPrimary {
+            padding: 8px 36%;
+        }
+    }
+}
+
+.m-heroContent__img {
+    grid-area: imgHero;
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    animation: walk 1.5s steps(4) infinite;
+    background: url('../../assets/img/astro/sprite_planetario_rev1.png') repeat-x;
+    background-position: 0;
+}
+
+.a-imgIndex {
+    object-fit: contain;
+    position: relative;
+    width: 45%;
+    top: 30px;
+    left: $spaceMd;
+}
+
+
+
 .hero {
     height: 380px;
 }
@@ -35,8 +133,12 @@
         .hero__title--text {
             padding-left: 1rem;
             width: 45vw;
-            h1, h6 {
-                color: $color-lighting;
+            h1 {
+                color: $color-lightin;
+            }
+            h3 {
+                padding-top: $spaceXs;
+                color: $color-grey;
             }
         }
     }
@@ -92,7 +194,7 @@
 
 .curve-container-md {
     height: 140px;
-    background-color: $color-lightengrey;
+    background-color: $color-lightgrey;
     margin-top: -1px;
     margin-bottom: -1.5%;
     overflow: hidden;

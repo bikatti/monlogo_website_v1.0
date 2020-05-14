@@ -9,128 +9,20 @@ html(lang="en")
   include ../base/header.pug
 
   // hero
-   section.hero-service.hero
+  include ../components/identidad_corporativa/_hero.pug
 
-  // Categories
-  section.categories-s
-   .container
-    .categories__title
-     .categories__title--text
-      h1.text--left
-       | #{service[0]}
+  // Explain
+  include ../components/identidad_corporativa/_explain.pug
 
-  section.fase
-   .container-fluid
-    .categories__s
-     .row
-      .col-lg-5.col-12.categories__text
-       p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates iste laudantium corrupti recusandae excepturi. Mollitia assumenda, cumque, alias ut nihil deserunt ipsa molestiae placeat aliquam debitis repellat repudiandae error nesciunt?
-       p
-        span hola
-        |El pago del servicio se hace en su totalidad en el momento de la contratación a través de transferencias via Zelle, envíos de dinero por PayPal o Airtm.
-       p
-        span H 
-        | Todo contacto y comunicación con el cliente será vía correo electrónico y por Whatsapp.
-        br
-        | * El precio del servicio de propuesta o revisión de diseño adicional es 20 $ USD
-      .categories__box.col-lg-7.col-12
-       .categories__box-1
-        span
-        h2 Pack Basico
-        h5 desde usd$ 75
-        p Lorem ipsum dolor sit amet cons dolor ctetur, adipisicing elit. Alias porro dolcabo sapiente perspiciatis
-        p
-         span hola
-         | Un (1) logo a partir de dos (2) propuestas*
-        p
-         span hola
-         | Un (1) ícono para perfil de redes sociales
-        p
-         span hola
-         | Un (1) manual de identidad visual de la marca en formato .pdf
-        p
-         span hola
-         | Tres (3) revisiones por diseño*
-        p
-         span hola
-         | Tiempo aproximado de la realización del trabajo Veinte (20) días
-       .categories__box-2
-        span
-        h2 Pack Basico
-        h5 desde usd$ 75
-        p Lorem ipsum dolor sit amet cons dolor ctetur, adipisicing elit. Alias porro dolcabo sapiente perspiciatis
-        p
-         span hola
-         | Un (1) logo a partir de dos (2) propuestas*
-        p
-         span hola
-         | Un (1) ícono para perfil de redes sociales
-        p
-         span hola
-         | Un (1) manual de identidad visual de la marca en formato .pdf
-        p
-         span hola
-         | Un (1) diseño de tarjeta de presentación a partir de dos (2) propuestas
-        p
-         span hola
-         | Un (1) diseño de background que podrá usarse para fondo de artes publicitarios y/o papelería
-        p
-         span hola
-         | Tres (3) revisiones por diseño*
-        p
-         span hola
-         | Tiempo aproximado de la realización del trabajo Veinte (30) días
-    // Explanation
-    .explanation
-     .container-fluid
-      .row
-       .explanation-1.col-md-6.col-12
-        h2 Lorem ipsum dolor?
-        h5 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias porro suscipit explicabo sapiente perspiciatis
-        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, harum facere neque vero eius deserunt magni, ad asperiores voluptatibus eligendi ratione? Porro hic delectus aspernatur ipsum adipisci. Minima, nostrum adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, beatae ex. Vero accusantium rerum harum veniam repellendus expedita laudantium culpa odit voluptate deleniti provident amet cupiditate optio quo, omnis cum?
-       .col-md-5.col-12
-        .imagen
-       .col-md-6.col-12
-        .imagen
-       .explanation-1.col-md-6.col-12
-        h2 Lorem ipsum dolor?
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa eos ex cupiditate error non, et ducimus vitae rerum natus, repellat reiciendis, possimus architecto magnam delectus sint veniam! Nostrum, blanditiis delectus!
-        span hola
-        p El pago del servicio se hace en su totalidad en el momento de la contratación a través de transferencias via Zelle, envíos de dinero por PayPal o Airtm.
-        span hola
-        p Todo contacto y comunicación con el cliente será vía correo electrónico y por Whatsapp.
-         |* El precio del servicio de propuesta o revisión de diseño adicional es 20 $ USD
-    // Boxes explanation
-    section.box-explanation
-     .boxes--fly
-      .boxes--fly-1
-       .boxes__img--fly-1
-        img(src=linksUrl[1]+"assets/img/001.png", alt="prueba")
-       .boxes__text--fly-1
-        .boxes--text
-         h2 Tener un logo
-         p Es el embajador, la primera cara que verán de la marca. Para tener un buen logo tinene que ser legible, distinguible y atemporal. Así la marca sera recordada por el público.
-      .boxes--fly-2
-       .boxes__text--fly-2
-        .boxes--text
-         h2 El manual de ideantidad visual
-         p Es un documento que incluye los lineamiento gráficos, usos, aplicaciones y restricciones para la implementación de la marca.
-          br
-          |Esto le servirá a que si trabaja con otros diseñaores o programadores, puedan implementar correctamente la marca.
-       .boxes__img--fly-2
-        img(src=linksUrl[1]+"assets/img/002.png", alt="prueba")
-      .boxes--fly-3
-       .boxes__text--fly-3
-        .boxes--text.order-2.order-sm-1
-         h2 Formatos de entrega son
-         p .psd, .ai, .pdf, .jpg, .png, .svg y entre otros. El manual se entregara en formato  .pdf
-          br
-          |Todos los elementos se  enviarán al correo electronico proporcionado por el cliente.
-        img(class="order-1 order-sm-2",src=linksUrl[1]+"assets/img/003.png", alt="prueba")
+  // pack service
+  include ../components/identidad_corporativa/_packege.pug
+  
+  
+  //Boxes pills
+  include ../components/identidad_corporativa/_boxpills.pug
 
   // Contact 2
-  section.contact
-   include ../components/contact_2.pug
+  include ../components/contact_2.pug
 
   // footer
   include ../base/footer.pug

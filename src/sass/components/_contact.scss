@@ -1,20 +1,31 @@
-.contact {
-    height: 150px;
+.o-contact {
     background-color: $color-primary;
-    border: 1px solid $color-primary;
-    display: flex;
-    align-items: center;
-    &-1__title {
-        h4 {
-            color: $color-lighting;
-        }
-        h6 {
-            color: $color-lighting;
-        }
+}
+
+.m-contactContent {
+    display: grid;
+    grid-template-columns: 80% 1fr;
+    grid-gap: 0 $spaceRg;
+    // grid-template-areas: "imgHero textHero";
+}
+
+.m-contact__title {
+    h3 {
+        color: $color-lightin;
     }
-    .contact__btn {
+}
+.m-contact__text {
+    h4 {
+        color: $color-grey;
+    }
+}
+
+.m-contact__button {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    .a-button {
         display: flex;
-        align-items: flex-end;
         justify-content: flex-end;
     }
 }

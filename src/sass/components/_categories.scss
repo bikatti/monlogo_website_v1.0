@@ -4,7 +4,7 @@
     padding-bottom: 5rem;
     display: flex;
     align-items: center;
-    background: linear-gradient(to top, $color-lightengrey 0%, $color-lighting 100%);
+    background: linear-gradient(to top, $color-lightgrey 0%, $color-lightin 100%);
     background-attachment: scroll;
     background-position-x: 0%;
     background-position-y: 0%;
@@ -28,9 +28,12 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            text-align: center;
+            padding: 0;
         }
-        &--text h1 {
+        &--text h2 {
             padding-bottom: 10px;
+            color: $color-primary;
         }
     }
 }
@@ -60,6 +63,9 @@
         margin-right: 10%;
         display: flex;
         justify-content: center;
+        &--title {
+            font-weight: 500;
+        }
         &--img {
             width: 30px;
             height: 30px;
@@ -67,6 +73,7 @@
         }
     }
     &__description {
+        padding-top: 5px;
         .sBox__desc--text {
             margin-left: 5px;
         }
@@ -155,7 +162,7 @@
     .categories__box-1 {
         width: 300px;
         height: 80%;
-        background-color: $color-lighting;
+        background-color: $color-lightin;
         border-radius: 20px;
         box-shadow: $shadow3;
         margin-left: 10px;
@@ -165,7 +172,7 @@
     }
     .categories__box-2 {
         width: 330px;
-        background-color: $color-lighting;
+        background-color: $color-lightin;
         border-radius: 20px;
         box-shadow: $shadow3;
         margin-left: 50px;
