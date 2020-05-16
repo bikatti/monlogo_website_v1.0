@@ -1,7 +1,5 @@
 .categories {
     height: auto;
-    padding-top: 3rem;
-    padding-bottom: 5rem;
     display: flex;
     align-items: center;
     background: linear-gradient(to top, $color-lightgrey 0%, $color-lightin 100%);
@@ -31,16 +29,37 @@
             text-align: center;
             padding: 0;
         }
-        &--text h2 {
+         h2 {
             padding-bottom: 10px;
             color: $color-primary;
+        }
+    }
+    @include mediaQueriesXl {
+        &__title {
+            h4 {
+                width: 70%;
+            }
+        }
+    }
+    @include mediaQueriesLg {
+        &__title {
+            h4 {
+                width: 80%;
+            }
+        }
+    }
+    @include mediaQueriesSm {
+        &__title {
+            h4 {
+                width: 100%;
+            }
         }
     }
 }
 
 .sBox {
     background: url('../img/back_planetario_rev1.svg') no-repeat center center;
-    padding-top: 3rem;
+    margin-top: $spaceRg;
     width: 100%;
     transition: .5s ease-in-out;
     &:hover {
@@ -62,6 +81,7 @@
         margin-top: 1.5rem;
         margin-right: 10%;
         display: flex;
+        align-items: center;
         justify-content: center;
         &--title {
             font-weight: 500;
@@ -78,6 +98,22 @@
             margin-left: 5px;
         }
     }
+    @include mediaQueriesLg {
+        .sBox__details {
+            margin-right: 0;
+        }
+        &__description {
+            .sBox__desc--text {
+                text-align: center;
+            }
+        }
+    }
+    @include mediaQueriesMd {
+        margin-top: $spaceMd;
+        .sBox__img {
+            max-width: 70%;
+        }
+    }
 }
 
 [data-scrollable-inner] {
@@ -92,9 +128,6 @@
     position: relative;
 }
 
-.category-menu {
-    padding-bottom: 45px;
-}
 .categories-s {
     height: 100px;
     margin-top: 2rem;
@@ -145,46 +178,5 @@
     }
     .tab-content > .active {
         display: flex;
-    }
-}
-
-.categories__s {
-    height: 900px;
-    max-width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-   .categories__box {
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        padding-top: 1rem;
-    }
-    .categories__box-1 {
-        width: 300px;
-        height: 80%;
-        background-color: $color-lightin;
-        border-radius: 20px;
-        box-shadow: $shadow3;
-        margin-left: 10px;
-        padding: 1.8rem;
-        padding-bottom: 0;
-        position: relative;
-    }
-    .categories__box-2 {
-        width: 330px;
-        background-color: $color-lightin;
-        border-radius: 20px;
-        box-shadow: $shadow3;
-        margin-left: 50px;
-        padding: 1.8rem;
-        position: relative;
-        top: 6rem;
-    }
-}
-
-.fase {
-    .container-fluid {
-        padding-right: 0;
-        padding-left: 0;
     }
 }

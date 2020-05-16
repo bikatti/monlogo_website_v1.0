@@ -7,28 +7,34 @@
 }
 
 .a-facebook {
-    width: 11px;
-    margin-left: 20px;
-    margin-right: 10px;
+    width: 30px;
+    margin-left: $spaceXs;
     position: relative;
     top: 3px;
-    content: url('../img/icons/facebook.svg');
-    @include mediaQueriesLg {
-        margin-left: 10px;
-        margin-right: 0;
-    }
+    content: url('../img/iconos/facebook.svg');
     @include mediaQueriesMd {
         margin-left: $spaceXs;
     }
 }
 
 .a-instagram {
-    width: 20px;
-    margin-left: 10px;
+    width: 30px;
+    margin-left: $spaceXs;
+    position: relative;
+    top: 3px;
+    content: url('../img/iconos/instagram.svg');
+    @include mediaQueriesMd {
+        margin-left: $spaceXs;
+    }
+}
+
+.a-whatsapp {
+    width: 30px;
+    margin-left: $spaceXs;
     // margin-right: 10px;
     position: relative;
     top: 3px;
-    content: url('../img/icons/instagram.svg');
+    content: url('../img/iconos/whatsapp.svg');
     @include mediaQueriesMd {
         margin-left: $spaceXs;
     }

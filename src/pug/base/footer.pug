@@ -1,51 +1,32 @@
-footer
- .footer
-  .container-fluid
-   .row
-    .col-md-3.col-12.offset-md-1
-     .footer--logo
-      a(href=linksUrl[1])
-       .logo.logo--footer: img(src=linksUrl[1]+logoColor[1], alt="logo brand")
-    .col-lg-1.col-md-2.d-none.d-md-block.offset-lg-4.offset-md-3
-     h5 Compañia
-     a(href=linksUrl[1]+linksInternos[2]): p Acerca de
-     a(href=linksUrl[1]): p Contacto
-    .collgd-2.col-md-3.d-none.d-md-block
-     h5 Servicios
-     a(href=linksUrl[1]+"servicios/"+linksInternos[0]): p #{service[0]}
-     a(href=linksUrl[1]+"servicios/"+linksInternos[1]): p #{service[1]}
-     a(href=linksUrl[1]+"servicios/"+linksInternos[3]): p #{service[2]}
-   .pd--monlogo.container.d-none.d-sm-block
-    .d-flex.justify-content-center.justify-content-md-start
-     a(href=linksUrl[1]): p.p-1 © monlogo
-     //a(href="#"): p.p-1 Condiciones
-     a(href=linksUrl[1]+"help/"+linksInternos[4]): p.p-1 Mapa del sitio
-     img(src=linksUrl[1]+"assets/img/iconos/planeta.png", class="img__planeta", alt="planeta")
-     a(href=linksUrl[1]): p.p-1 español
-     //a(href="#"): p.p-1 English
-     a(href=linksUrl[1], class="ml-md-auto"): img(src=linksUrl[1]+"assets/img/iconos/facebook.png", alt="facebook")
-     a(href=linksExternos[0]): img(src=linksUrl[1]+"assets/img/iconos/instagram.png", class="", alt="instagram")
-     a(href=linksExternos[1]): img(src=linksUrl[1]+"assets/img/iconos/whatsapp.png", class="", alt="facebook")
-   .pd--monlogo.container.d-block.d-sm-none
-    .row.d-flex.justify-content-center
-     .col-12
-      a(href=linksUrl[1]): p.p-1.text-center © monlogo
-     .col-12
-      a(href=linksUrl[1]): p.p-1 Condiciones
-      a(href=linksUrl[1]): p.p-1 Ayuda
-      a(href=linksUrl[1]+"help/"+linksInternos[4]): p.p-1 Mapsite
-     .col-12
-      img(src=linksUrl[1]+"assets/img/iconos/planeta.png", class="img__planeta", alt="planeta")
-      a(href=linksUrl[1]): p.p-1 español
-      //a(href="#"): p.p-1 English
-     .col-12
-      a(href=linksUrl[1], class="ml-md-auto"): img(src=linksUrl[1]+"assets/img/iconos/facebook.png", alt="facebook")
-      a(href=linksExternos[0]): img(src=linksUrl[1]+"assets/img/iconos/instagram.png", class="", alt="instagram")
-      a(href=linksExternos[1]): img(src=linksUrl[1]+"assets/img/iconos/whatsapp.png", class="", alt="facebook")
+footer.o-footer.-padMdTopBottom
+  .m-footerContent.-ContainerUniversal
+   .m-footer__logo
+    a(href=linksUrl[1]): img.-bColor(src=linksUrl[1]+logoColor[1], alt="")
+   .m-footer__list
+    .m-footer__column
+     h4.-strong Compañia
+     a(href=linksUrl[1]+"servicios/"+linksInternos[2]): p.-linkNormal #{titles[0]}
+     a(href=linksUrl[1]): p.-linkNormal #{titles[5]}
+    .m-footer__column
+     h4.-strong Servicios
+     a(href=linksUrl[1]+"servicios/"+linksInternos[0]): p.-linkNormal #{titles[2]}
+     a(href=linksUrl[1]+"servicios/"+linksInternos[1]): p.-linkNormal #{titles[3]}
+     a(href=linksUrl[1]+"servicios/"+linksInternos[3]): p.-linkNormal #{titles[4]}
+   .m-footer__end
+    .m-footer__details
+     p © monlogo
+     a(href=linksUrl[1]): p.-linkNormal Mapa del sitio
+     a(href=linksUrl[1])
+      .a-facebook
+      p.-linkNormal español
+    .m-footer__media
+     a.a-socialMdeia(href=linksUrl[1]): .a-facebook
+     a.a-socialMdeia(href=linksExternos[0]): .a-instagram
+     a.a-socialMdeia(href=linksExternos[1]): .a-whatsapp
 
 // Optional JavaScript
 // jQuery first, then Popper.js, then Bootstrap JS
 script(src="https://code.jquery.com/jquery-3.4.1.slim.min.js", integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n", crossorigin="anonymous")
 script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js", integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo", crossorigin="anonymous")
 script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js", integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6", crossorigin="anonymous")
-script(src=linksUrl[1]+"assets/js/all.js")
+script(src=linksUrl[1]+"assets/js/index.js")

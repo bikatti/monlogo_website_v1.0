@@ -7,11 +7,27 @@
     grid-template-columns: 80% 1fr;
     grid-gap: 0 $spaceRg;
     // grid-template-areas: "imgHero textHero";
+    @include mediaQueriesLg {
+        grid-gap: 0 $spaceXs;
+    }
+    @include mediaQueriesMd {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 50%;
+    }
+    @include mediaQueriesSm {
+        grid-template-rows: 1fr auto;
+    }
 }
 
 .m-contact__title {
     h3 {
         color: $color-lightin;
+    }
+    @include mediaQueriesMd {
+        margin-bottom: 5px;
+        h3 {
+            font-size: $fontS3;
+        }
     }
 }
 .m-contact__text {
@@ -27,5 +43,12 @@
     .a-button {
         display: flex;
         justify-content: flex-end;
+    }
+    @include mediaQueriesMd {
+        align-items: center;
+        justify-content: center;
+    }
+    @include mediaQueriesSm {
+        padding-top: $spaceXs;
     }
 }

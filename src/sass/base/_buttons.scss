@@ -49,6 +49,21 @@
     padding: 6px $spaceRg;
 }
 
+.-outlineLightin {
+    @extend .-outlinePrimary;
+    font-size: $fontS2 + 3;
+    font-weight: 600;
+    color: $color-lightin;
+    border: 2px solid $color-lightin;
+    &:hover {
+        background-color: $color-lightin;
+        color: $color-primary;
+    }
+    &:active, &:focus {
+        box-shadow: 0 0 0 3px $color-primary;
+    }
+}
+
 .-wierdPrimary {
     padding: 8px 30px;
     border-radius: $spaceSm;

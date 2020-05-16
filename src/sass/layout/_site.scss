@@ -5,10 +5,6 @@ html, body, p, div, h1, h2, h3, ul, ol, img, form {
 
 body {
     position: relative;
-    padding-top: 80px;
-    @include mediaQueriesMd {
-        padding-top: 50px;
-    }
 }
 
 article, aside, figure, footer, header,

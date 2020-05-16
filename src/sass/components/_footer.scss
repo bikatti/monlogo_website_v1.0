@@ -1,39 +1,125 @@
-.footer {
-    background: $color-lightin;
-    height: 260px;
-    display: flex;
-    align-items: center;
-    padding-top: 25px;
-    a:hover p {
-        color: $color-variation;
+.o-footer {
+    position: relative;
+}
+
+.m-footerContent {
+    display: grid;
+    grid-template-columns: 27% 1fr 28%;
+    grid-template-rows: 70% 1fr;
+    grid-gap: $spaceSm 0;
+    grid-template-areas: "footerLogo footerLogo footerList"
+                         "footerEnd footerEnd footerEnd";
+    @include mediaQueriesLg {
+        grid-template-columns: 27% 1fr 36%;
     }
-    .row {
-        padding-bottom: 10px;
+    @include mediaQueriesMd {
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 1fr auto;
+        grid-gap: $spaceRg 0;
+        grid-template-areas: "footerLogo"
+                             "footerList"
+                             "footerEnd";
     }
-    .pd--monlogo {
-        padding-top: 10px;
-        border-top: 1px solid $color-lightgrey;
-        .img__planeta {
-            margin-top: 5px;
-            width: 22px;
-            height: 22px;
-        }
-        img {
-            width: 28px;
-            height: 28px;
-            margin-left: 5px;
-            margin-right: 5px;
-        }
-    }
-    .companiabottom {
-        position: relative;
-        top: 32px;
-    }
-    .col-md-1 {
-        padding-left: 0;
-        padding-right: 0;
+    @include mediaQueriesSm {
+        grid-template-rows: 1fr auto;
+        grid-gap: $spaceSm 0;
+        grid-template-areas: "footerLogo"
+                             "footerEnd";
     }
 }
+
+.m-footer__logo {
+    grid-area: footerLogo;
+    width: 180px;
+    display: flex;
+    align-items: flex-start;
+    img {
+        width: 100%;
+    }
+    @include mediaQueriesSm {
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.m-footer__list {
+    grid-area: footerList;
+    display: flex;
+    @include mediaQueriesMd {
+        flex-direction: column;
+    }
+    @include mediaQueriesSm {
+        display: none;
+    }
+}
+.m-footer__column {
+    margin-right: $spaceRg;
+    &:last-child {
+        margin-right: 0;
+    }
+    @include mediaQueriesMd {
+        margin-bottom: $spaceXs;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+.m-footer__end {
+    grid-area: footerEnd;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: $spaceXs;
+    border-top: 1px solid $color-lightgrey;
+    .a-facebook, .a-instagram, .a-whatsapp {
+        width: $spaceSm;
+        top: -6px;
+    }
+    @include mediaQueriesSm {
+        flex-direction: column;
+    }
+}
+
+.m-footer__details {
+    display: flex;
+    flex-direction: row;
+    p {
+        margin-right: $spaceXs;
+    }
+    a {
+        display: flex;
+        flex-direction: row;
+    }
+    @include mediaQueriesSm {
+        justify-content: center;
+    }
+    @include mediaQueriesXs {
+        .a-facebook {
+            margin-left: 0;
+        }
+        p {
+            margin-right: 10px;
+            font-size: $fontS2;
+        }
+    }
+    @include mediaQueries0 {
+        p {
+            font-size: $fontS1;
+        }
+    }
+}
+
+.m-footer__media {
+    @extend .m-footer__details;
+    @include mediaQueriesSm {
+        justify-content: center;
+    }
+}
+
+
 .logo.logo--footer {
     img {
         width: 180px;

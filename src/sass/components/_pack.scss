@@ -5,6 +5,90 @@
 .m-packs {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-gap: 0 $spaceMd;
     justify-content: center;
+    @include mediaQueriesMd {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+}
+
+.m-pack__list {
+    ol {
+        color: $color-darkgrey;
+    }
+}
+
+.m-pack__details {
+    position: relative;
+}
+
+.m-pack__border {
+    position: relative;
+    border-bottom: 2px solid $color-grey;
+    border-left: 2px solid $color-grey;
+    &:first-child {
+        padding-left: 0;
+        border-left: none;
+    }
+    &:last-child {
+        padding-right: 0;
+    }
+    @include mediaQueriesMd {
+        border-left: none;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}
+
+.a-pack {
+    display: block;
+    height: 430px;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: $spaceSm;
+    padding-right: $spaceSm;
+    background: $color-lightin;
+    box-sizing: content-box;
+    &::before {
+        background: $color-lightin;
+        transition-duration: .3s;
+        transition-timing-function: ease-out;
+        transition-property: box-shadow transform;
+        content: '';
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    &:hover::before {
+        transform: scale(1.05, 1.1);
+        box-shadow: 0 7px 21px 0 $color-grey;
+    }
+    &:hover {
+        z-index: 1;
+        cursor: pointer;
+    }
+    @include mediaQueriesXl {
+        height: 500px;
+    }
+    @include mediaQueriesLg {
+        height: 580px;
+    }
+    @include mediaQueriesMd {
+        height: auto;
+        padding-top: $spaceRg;
+        padding-bottom: $spaceSm;
+        &:hover::before {
+            transform: none;
+            box-shadow: none;
+        }
+    }
+    @include mediaQueriesXs {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }

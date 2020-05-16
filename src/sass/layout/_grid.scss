@@ -17,6 +17,21 @@
     }
 }
 
+.-ContainerMd {
+    @extend .-ContainerUniversal;
+    max-width: 68%;
+    @include mediaQueriesLg {
+        max-width: 76%;
+    }
+    @include mediaQueriesMd {
+        max-width: 89.66%;
+    }
+    @include mediaQueries0 {
+        padding: 0;
+        max-width: 86%;
+    }
+}
+
 .-ContainerBlog {
     @extend .-ContainerUniversal;
     max-width: 60%;
@@ -47,6 +62,10 @@ section .a-noPadding {
     padding: 0;
 }
 
+.-d-none {
+    display: none !important;
+}
+
 section .a-paddingMd {
     padding-top: $spaceXs;
     padding-bottom: $spaceSm;
@@ -64,6 +83,10 @@ section .a-paddingMd {
 .-padMdTopBottom {
     padding-top: $spaceMd;
     padding-bottom: $spaceMd;
+    @include mediaQueriesSm {
+        padding-top: $spaceSm;
+        padding-bottom: $spaceSm;
+    }
 }
 
 .-padRgTopBottom {
@@ -78,6 +101,20 @@ section .a-paddingMd {
 
 .-padBgBottom {
     padding-bottom: 80px;
+    @include mediaQueriesMd {
+        padding-bottom: $spaceMd;
+    }
+}
+
+.-padMdBottom {
+    padding-bottom: $spaceMd;
+    @include mediaQueriesMd {
+        padding-bottom: $spaceMd;
+    }
+}
+
+.-padMdTop {
+    padding-top: $spaceMd;
     @include mediaQueriesMd {
         padding-bottom: $spaceMd;
     }

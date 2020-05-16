@@ -1,11 +1,14 @@
 .o-hero {
     position: relative;
-    padding-top: $spaceMd;
-    padding-bottom: $spaceMd;
     background-color: $color-bg;
     @include mediaQueriesMd {
-        padding-top: $spaceRg;
-        padding-bottom: $spaceRg;
+        padding-top: $spaceBg;
+    }
+    @include mediaQueriesSm {
+        padding-top: 100px;
+    }
+    @include mediaQueriesXxs {
+        padding-top: 90px;
     }
 }
 
@@ -16,14 +19,20 @@
     grid-gap: 0 $spaceRg;
     grid-template-areas: "imgHero textHero";
     justify-content: center;
+    @include mediaQueriesLg {
+        grid-template-columns: 55% 1fr;
+        grid-template-rows: auto;
+        grid-gap: 0 $spaceXs;
+        // justify-content: flex-start;
+    }
     @include mediaQueriesMd {
-        grid-template-columns: 86%;
-        grid-template-rows: 1fr 300px;
-        grid-gap: $spaceRg 0;
+        grid-template-columns: 88%;
+        grid-template-rows: auto 1fr;
+        grid-gap: $spaceXs 0;
         grid-template-areas: "textHero" "imgHero";
     }
-    @include mediaQueriesXs {
-        grid-template-columns: 100%;
+    @include mediaQueriesSm {
+        grid-template-columns: auto;
     }
 }
 
@@ -84,6 +93,31 @@
     animation: walk 1.5s steps(4) infinite;
     background: url('../../assets/img/astro/sprite_planetario_rev1.png') repeat-x;
     background-position: 0;
+    @include mediaQueriesLg {
+        // background-position: 5em;
+        background-size: 2000px;
+    }
+    @include mediaQueriesMd {
+        margin-left: auto;
+        margin-right: auto;
+        width: 500px;
+        background-size: 2000px;
+    }
+    @include mediaQueriesSm {
+        width: 100%;
+        height: 300px;
+    }
+    @include mediaQueriesXs {
+        height: 280px;
+        background-size: 1400px;
+    }
+    @include mediaQueriesXxs {
+        height: 190px;
+        margin-left: -7%;
+    }
+    @include mediaQueries0 {
+        background-size: 1200px;
+    }
 }
 
 .a-imgIndex {
@@ -92,82 +126,17 @@
     width: 45%;
     top: 30px;
     left: $spaceMd;
-}
-
-
-
-.hero {
-    height: 380px;
-}
-
-.hero-index {
-    height: auto;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-    padding-left: 0;
-    padding-right: 0;
-    background: $color-variation;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .hero__title {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        .hero__img {
-            width: 57vw;
-            height: 350px;
-            display: flex;
-            justify-content: center;
-            animation: walk 1.5s steps(4) infinite;
-            background: url('../../assets/img/astro/sprite_planetario_rev1.png') repeat-x;
-            background-position: 0;
-        }
-        .hero__img img {
-            object-fit: contain;
-            position: relative;
-            width: 38%;
-            top: 30px;
-            //animation: rotimgast .8s ease-in-out infinite;
-        }
-        .hero__title--text {
-            padding-left: 1rem;
-            width: 45vw;
-            h1 {
-                color: $color-lightin;
-            }
-            h3 {
-                padding-top: $spaceXs;
-                color: $color-grey;
-            }
-        }
+    @include mediaQueriesMd {
+        left: $spaceRg;
+    }
+    @include mediaQueriesXs {
+        left: $spaceXs;
+    }
+    @include mediaQueriesXxs {
+        left: $spaceSm;
     }
 }
-@keyframes rotimgast {
-    0% {
-        transform: rotate(0deg);
-    }
-    10% {
-        transform: rotate(1deg);
-    }
-    25% {
-        transform: rotate(2deg);
-        top: 60px;
-    }
-    50% {
-        transform: rotate(0deg);
-        top: 40px;
-    }
-    75% {
-        transform: rotate(-1deg);
-    }
-    90% {
-        transform: rotate(-2deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
-}
+
 @keyframes walk {
     0% {
         background-position: 0px;
@@ -176,6 +145,39 @@
         background-position: -2467px;
     }
 }
+@include mediaQueriesLg {
+    @keyframes walk {
+        0% {
+            background-position: 0px;
+        }
+        100% {
+            background-position: -1998px;
+        }
+    }
+}
+
+@include mediaQueriesXs {
+    @keyframes walk {
+        0% {
+            background-position: 0px;
+        }
+        100% {
+            background-position: -1399px;
+        }
+    }
+}
+
+@include mediaQueries0 {
+    @keyframes walk {
+        0% {
+            background-position: 0px;
+        }
+        100% {
+            background-position: -1199px;
+        }
+    }
+}
+
 .curve-container {
     height: 120px;
     margin-top: -1%;
@@ -184,13 +186,35 @@
     .curve-bg {
         height: 100%;
         width: 100vw;
-        /* padding-bottom: -webkit-calc(100% * 84 / 1440);
-        padding-bottom: calc(100% * 84 / 1440); */
+        /* padding-bottom: calc(100% * 84 / 1440); */
         background: url('../../assets/img/details/home_hero_curve_rev1.svg') no-repeat center top;
         background-size: 100% 100%;
     }
-    
+    @include mediaQueriesXl {
+        margin-top: -1.5%;
+    }
+    @include mediaQueriesLg {
+        height: 100px;
+        margin-top: -2%;
+    }
+    @include mediaQueriesMd {
+        margin-top: -4%;
+    }
+    @include mediaQueriesSm {
+        margin-top: -5%;
+    }
+    @include mediaQueriesXs {
+        margin-top: -9%;
+    }
+    @include mediaQueriesXxs {
+        margin-top: -11%;
+    }
+    @include mediaQueries0 {
+        margin-top: -12%;
+    }
 }
+
+
 
 .curve-container-md {
     height: 140px;
@@ -204,10 +228,4 @@
         background: url('../../assets/img/details/home_curve_rev2.svg') no-repeat center top;
         background-size: 100% 100%;
     }
-}
-
-.hero-service {
-    background: $color-variation;
-    display: flex;
-    align-items: center;
 }

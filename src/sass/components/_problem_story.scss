@@ -3,6 +3,12 @@
     box-sizing: border-box;
 }
 
+// .o-problem__text {}
+
+.m-problemOnly__title {
+    padding-bottom: $spaceXs;
+}
+
 .o-problemStory__content {
     &Right {
         display: grid;

@@ -3,7 +3,8 @@ include lib/mixins.pug
 <!DOCTYPE html>
 html(lang="en")
  include base/head.pug
-  title Monlogo
+  meta(name="title", content=titles[6]+" - Creamos productos digitales para hacer despegar tu empresa")
+  title #{titles[6]}  - Creamos productos digitales para hacer despegar tu empresa
  body
   // menu
   include base/header.pug
@@ -12,19 +13,7 @@ html(lang="en")
   include components/index/_hero.pug
 
   // categories
-  section.categories
-   .container-fluid
-    .row
-     .categories__title
-      .col-12.categories__title--text
-       h2.text--left
-        | Diseñamos identidad corporativa, páginas web, y más!
-       .line__vertical-01
-       h4 Creamos diseños y desarrollo web que este a la altura de tu negocio. Presiona en la imagen para ver los pack que ofrecemos en cada categoría
-     include components/index/categories.pug
-  //- div
-   .curve-container-md
-    .curve-md
+  include components/index/categories.pug
 
   //- modus
    section.modus
